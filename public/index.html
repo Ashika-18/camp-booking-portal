@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ファミリーキャンプ場 公式ポータル | かんたん・安心予約サポート</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header class="site-header">
@@ -15,7 +15,6 @@
   </header>
 
   <main>
-    <!-- ヒーローセクション -->
     <section class="hero">
       <div class="container">
         <h2>初心者ファミリーも安心。<br>失敗しないサイト選びと確実な予約。</h2>
@@ -23,7 +22,6 @@
       </div>
     </section>
 
-    <!-- 初心者向け予約ガイド -->
     <section class="guide-section">
       <div class="container">
         <h3 class="section-title">🔰 初めてでも安心！予約の3ステップ</h3>
@@ -47,49 +45,52 @@
       </div>
     </section>
 
-    <!-- キャンプサイト一覧（カタログ） -->
     <section class="catalog-section">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+        <div class="catalog-header">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
             <h3 class="section-title" style="margin: 0;">🏕️ キャンプサイト・宿泊施設一覧</h3>
             <div id="result-counter" style="font-size: 0.9rem; font-weight: bold; color: #475569; background: #e2e8f0; padding: 4px 12px; border-radius: 999px;">
               該当件数: 0件
             </div>
           </div>
-            <div class="search-inputs">
-              <div class="search-field">
-                <label for="city-filter">エリア・市町村</label>
-                <select id="city-filter">
-                  <option value="">すべてのエリア（兵庫県全域）</option>
-                  <option value="加西市">加西市</option>
-                  <option value="姫路市">姫路市</option>
-                  <option value="西脇市">西脇市</option>
-                  <option value="神河町">神河町</option>
-                  <option value="多可町">多可町</option>
-                  <option value="宍粟市">宍粟市</option>
-                  <option value="丹波篠山市">丹波篠山市</option>
-                  <option value="淡路市">淡路市</option>
-                  <option value="洲本市">洲本市</option>
-                  <option value="豊岡市">豊岡市</option>
-                  <option value="養父市">養父市</option>
-                  <option value="香美町">香美町</option>
-                  <option value="新温泉町">新温泉町</option>
-                </select>
-              </div>
-              <div class="search-field search-keyword-field">
-                <label for="search-input">キーワード検索</label>
-                <input type="text" id="search-input" placeholder="施設名、設備名（川遊び、温泉など）">
-              </div>
+        </div>
+
+        <div class="search-filter-box">
+          <div class="search-inputs">
+            <div class="search-field">
+              <label for="city-filter">エリア・市町村</label>
+              <select id="city-filter">
+                <option value="">すべてのエリア（兵庫県全域）</option>
+                <option value="加西市">加西市</option>
+                <option value="姫路市">姫路市</option>
+                <option value="西脇市">西脇市</option>
+                <option value="神河町">神河町</option>
+                <option value="多可町">多可町</option>
+                <option value="宍粟市">宍粟市</option>
+                <option value="丹波篠山市">丹波篠山市</option>
+                <option value="淡路市">淡路市</option>
+                <option value="洲本市">洲本市</option>
+                <option value="豊岡市">豊岡市</option>
+                <option value="養父市">養父市</option>
+                <option value="香美町">香美町</option>
+                <option value="新温泉町">新温泉町</option>
+              </select>
             </div>
-  
-            <div class="filter-group">
-              <button class="filter-btn active" data-type="all">すべて</button>
-              <button class="filter-btn" data-type="auto_power">電源付き</button>
-              <button class="filter-btn" data-type="auto_standard">標準オート</button>
-              <button class="filter-btn" data-type="cottage">コテージ</button>
+            <div class="search-field search-keyword-field">
+              <label for="search-input">キーワード検索</label>
+              <input type="text" id="search-input" placeholder="施設名、設備名（川遊び、温泉など）">
             </div>
           </div>
+
+          <div class="filter-group">
+            <button class="filter-btn active" data-type="all">すべて</button>
+            <button class="filter-btn" data-type="auto_power">電源付き</button>
+            <button class="filter-btn" data-type="auto_standard">標準オート</button>
+            <button class="filter-btn" data-type="cottage">コテージ</button>
+          </div>
         </div>
+
         <div id="sites-container" class="sites-grid">
           <p class="loading-text">サイト情報を読み込み中...</p>
         </div>
@@ -97,10 +98,9 @@
     </section>
   </main>
 
-  <!-- 施設詳細・予約問い合わせモーダル -->
   <div id="booking-modal" class="modal hidden">
     <div class="modal-backdrop"></div>
-    <div class="modal-content" style="max-width: 620px; max-height: 90vh; overflow-y: auto;">
+    <div class="modal-content">
       <div class="modal-header" style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 16px;">
         <div>
           <span style="font-size: 0.8rem; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 4px; font-weight: bold;">施設詳細・申請ガイド</span>
@@ -109,17 +109,13 @@
         <button id="modal-close-btn" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #64748b; line-height: 1;">&times;</button>
       </div>
 
-      <!-- 施設スペック・注意事項の詳細表示エリア -->
-      <div id="modal-site-details" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; margin-bottom: 20px; font-size: 0.88rem; line-height: 1.6; color: #334155;">
-        <!-- JSから自動挿入されます -->
-      </div>
+      <div id="modal-site-details" style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; margin-bottom: 20px; font-size: 0.88rem; line-height: 1.6; color: #334155;"></div>
 
       <h4 style="margin: 0 0 10px 0; font-size: 0.95rem; color: #1e293b; border-left: 3px solid #2e7d32; padding-left: 8px;">予約問い合わせ・下書きメモ作成</h4>
       <p style="font-size: 0.8rem; color: #64748b; margin-top: 0; margin-bottom: 14px;">必要事項を入力すると、電話用メモやメールの文面が自動生成されます。</p>
 
       <form id="inquiry-form">
         <input type="hidden" id="inquiry-site-id" value="">
-        
         <div style="display: flex; gap: 12px; margin-bottom: 12px;">
           <div style="flex: 1;">
             <label style="font-size: 0.8rem; font-weight: bold; color: #475569; display: block; margin-bottom: 4px;">代表者氏名 <span style="color: #ef4444;">*</span></label>
@@ -150,6 +146,7 @@
       <div id="memo-output" style="display: none; margin-top: 16px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; padding: 14px;">
         <h5 style="margin: 0 0 8px 0; color: #166534;">作成された連絡メモ:</h5>
         <textarea id="memo-text" rows="5" readonly style="width: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #86efac; border-radius: 6px; font-family: monospace; font-size: 0.85rem;"></textarea>
+        <div id="booking-actions" style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px;"></div>
       </div>
     </div>
   </div>
@@ -163,6 +160,6 @@
     </div>
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
