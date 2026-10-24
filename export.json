@@ -1,0 +1,4009 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-24T07:30:21Z",
+    "timestamp_areas_base": "2026-10-24T06:04:35Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1501323349,
+      "tags": {
+        "name": "campeggio",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1907413225,
+      "tags": {
+        "addr:block_number": "602-2",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町小代区貫田602-2",
+        "addr:neighbourhood": "小代区貫田",
+        "addr:postcode": "667-1544",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "吉滝キャンプ場・コテージ村",
+        "name:en": "Yoshitaki Camping Sites",
+        "phone": "070-3883-1129",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1907420403,
+      "tags": {
+        "addr:block_number": "1432-35",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町小代区新屋1432-35",
+        "addr:neighbourhood": "小代区新屋",
+        "addr:postcode": "667-1532",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "奥但馬・南部高原キャンプ場・コテージ村",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2246853541,
+      "tags": {
+        "addr:street": "田口福田線",
+        "name": "福崎町青少年野外活動センター",
+        "phone": "0790-22-0560",
+        "tourism": "camp_site",
+        "website": "https://www.town.fukusaki.hyogo.jp/0000000061.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3745642565,
+      "tags": {
+        "name": "豊岡市大師山自然公園キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3745764362,
+      "tags": {
+        "addr:block_number": "59-2",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市日高町栗栖野59-2",
+        "addr:neighbourhood": "日高町栗栖野",
+        "addr:postcode": "669-5372",
+        "addr:province": "兵庫県",
+        "name": "神鍋高原キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4476444891,
+      "tags": {
+        "addr:block_number": "2-3",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市西区井吹台東町7丁目2-3",
+        "addr:neighbourhood": "井吹台東町7丁目",
+        "addr:postcode": "651-2242",
+        "addr:province": "兵庫県",
+        "addr:suburb": "西区",
+        "name": "井吹の森",
+        "name:ja": "井吹の森",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5019046128,
+      "tags": {
+        "addr:block_number": "1502-1",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市山南町上滝1502-1",
+        "addr:neighbourhood": "山南町上滝",
+        "addr:province": "兵庫県",
+        "name": "Kawashiro Park Camping Ground 川代公園キャンプ場",
+        "name:ja": "Kawashiro Park Camping Ground 川代公園キャンプ場",
+        "phone": "0795772345",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5291382544,
+      "tags": {
+        "addr:block_number": "949",
+        "addr:city": "三田市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三田市小柿949",
+        "addr:neighbourhood": "小柿",
+        "addr:postcode": "669-1401",
+        "addr:province": "兵庫県",
+        "building": "yes",
+        "name": "三田市野外活動センター",
+        "phone": "079-569-0388",
+        "tourism": "camp_site",
+        "website": "http://www.sanda-outdoor.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5572907024,
+      "tags": {
+        "name:en": "wild camping (pure cats tho)",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5584271721,
+      "tags": {
+        "name:en": "hitchhiking spec",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5610491521,
+      "tags": {
+        "addr:city": "多可郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県多可郡多可町加美区鳥羽",
+        "addr:neighbourhood": "加美区鳥羽",
+        "addr:province": "兵庫県",
+        "addr:suburb": "多可町",
+        "name": "三国公園鳥羽キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850664386,
+      "tags": {
+        "addr:block_number": "1345-2",
+        "addr:city": "加西市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加西市東剣坂町字善防北ノ手1345-2",
+        "addr:neighbourhood": "東剣坂町字善防北ノ手",
+        "addr:postcode": "675-2346",
+        "addr:province": "兵庫県",
+        "name": "古法華キャンプ場",
+        "name:ja": "古法華キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850664487,
+      "tags": {
+        "addr:block_number": "1224-1",
+        "addr:city": "小野市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県小野市来住町1224-1",
+        "addr:neighbourhood": "来住町",
+        "addr:postcode": "675-1343",
+        "addr:province": "兵庫県",
+        "name": "鴨池公園キャンプ場",
+        "name:ja": "鴨池公園キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5985390085,
+      "tags": {
+        "addr:block_number": "1224-1",
+        "addr:city": "小野市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県小野市来住町1224-1",
+        "addr:neighbourhood": "来住町",
+        "addr:province": "兵庫県",
+        "name": "鴨池公園キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6001659900,
+      "tags": {
+        "addr:block_number": "4001",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市気比字絹巻4001",
+        "addr:neighbourhood": "気比字絹巻",
+        "addr:postcode": "669-6124",
+        "addr:province": "兵庫県",
+        "name": "Campground",
+        "tourism": "camp_site",
+        "website": "https://keinohama.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6010182885,
+      "tags": {
+        "addr:block_number": "2296-3",
+        "addr:city": "赤穂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂市尾崎字丸山2296-3",
+        "addr:neighbourhood": "尾崎字丸山",
+        "addr:postcode": "678-0221",
+        "addr:province": "兵庫県",
+        "name": "丸山県民サンビーチ",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6010209485,
+      "tags": {
+        "addr:block_number": "2296-3",
+        "addr:city": "赤穂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂市尾崎字丸山2296-3",
+        "addr:neighbourhood": "尾崎字丸山",
+        "addr:postcode": "678-0221",
+        "addr:province": "兵庫県",
+        "name": "丸山県民サンビーチ",
+        "phone": "0791436839",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6010219786,
+      "tags": {
+        "addr:block_number": "2296-3",
+        "addr:city": "赤穂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂市尾崎字丸山2296-3",
+        "addr:neighbourhood": "尾崎字丸山",
+        "addr:postcode": "678-0221",
+        "addr:province": "兵庫県",
+        "name": "丸山県民サンビーチ",
+        "phone": "0791436839",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6029438785,
+      "tags": {
+        "name": "原不動滝キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6339244785,
+      "tags": {
+        "name:en": "Yashiro kamogawa-no-sato Camping Ground",
+        "phone": "0795450111",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6821087786,
+      "tags": {
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6904293385,
+      "tags": {
+        "addr:block_number": "41-1",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市遠方41-1",
+        "addr:neighbourhood": "遠方",
+        "addr:province": "兵庫県",
+        "name": "丹波笹山キャンプ場",
+        "survey:date": "2019-10-22",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7368449785,
+      "tags": {
+        "name": "雪彦山登山口・キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7448713685,
+      "tags": {
+        "name:en": "236 Furubokke Natural Park",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11880821892,
+      "tags": {
+        "fee": "yes",
+        "tents": "yes",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12171266015,
+      "tags": {
+        "description": "グランピングサイト",
+        "reservation": "required",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12171266038,
+      "tags": {
+        "description": "区画テントサイト",
+        "reservation": "required",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12704781254,
+      "tags": {
+        "access": "yes",
+        "addr:block_number": "1788",
+        "addr:city": "西宮市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西宮市山口町船坂1788",
+        "addr:neighbourhood": "山口町船坂",
+        "addr:postcode": "651-1423",
+        "addr:province": "兵庫県",
+        "camp_site": "basic",
+        "capacity:persons": "20",
+        "name": "FBR (ForestBaseRokko)",
+        "operator": "個人",
+        "tents": "yes",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14196042401,
+      "tags": {
+        "addr:block_number": "431-33",
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市谷町431-33",
+        "addr:neighbourhood": "谷町",
+        "addr:postcode": "677-0051",
+        "addr:province": "兵庫県",
+        "check_date": "2026-09-19",
+        "name": "やはずの森倶楽部",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285406086,
+      "tags": {
+        "addr:block_number": "66-119",
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市佐嚢66-119",
+        "addr:neighbourhood": "佐嚢",
+        "addr:postcode": "679-3453",
+        "addr:province": "兵庫県",
+        "name": "ワイワイパークキャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285406087,
+      "tags": {
+        "addr:block_number": "66",
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市佐嚢66番地",
+        "addr:neighbourhood": "佐嚢",
+        "addr:postcode": "679-3453",
+        "addr:province": "兵庫県",
+        "name": "さのうフォレストキャンプ",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285406093,
+      "tags": {
+        "addr:block_number": "881-146",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡神河町上小田881-146",
+        "addr:neighbourhood": "上小田",
+        "addr:postcode": "679-3125",
+        "addr:province": "兵庫県",
+        "addr:suburb": "神河町",
+        "name": "峰山高原リゾート 星降る高原キャンプ場",
+        "phone": "0790-34-1516",
+        "tourism": "camp_site",
+        "website": "https://mineyama-kogen-resort.com/green/camp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285430019,
+      "tags": {
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市竹野町竹野",
+        "addr:neighbourhood": "竹野町竹野",
+        "addr:postcode": "669-6201",
+        "addr:province": "兵庫県",
+        "name": "休暇村 竹野海岸キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285430020,
+      "tags": {
+        "addr:block_number": "3366",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市竹野町竹野3366番地",
+        "addr:neighbourhood": "竹野町竹野",
+        "addr:postcode": "669-6201",
+        "addr:province": "兵庫県",
+        "name": "竹野子ども体験村",
+        "phone": "090-4904-1080",
+        "tourism": "camp_site",
+        "website": "https://www.takenocamp.com/blank-12"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285457141,
+      "tags": {
+        "addr:block_number": "669",
+        "addr:city": "佐用郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県佐用郡佐用町横坂669",
+        "addr:neighbourhood": "横坂",
+        "addr:postcode": "679-5341",
+        "addr:province": "兵庫県",
+        "addr:suburb": "佐用町",
+        "name": "佐用スターリゾート CAMP＆RV",
+        "phone": "0790-82-0555",
+        "power_supply": "yes",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285576581,
+      "tags": {
+        "addr:block_number": "870-1",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市福良丙870-1",
+        "addr:neighbourhood": "福良丙",
+        "addr:postcode": "656-0503",
+        "addr:province": "兵庫県",
+        "name": "南淡路シーサイドキャンプ場",
+        "phone": "0799-52-0291",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285591269,
+      "tags": {
+        "addr:block_number": "1188-3",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市小島1188-3",
+        "addr:neighbourhood": "小島",
+        "addr:postcode": "669-6123",
+        "addr:province": "兵庫県",
+        "name": "RVパーク HESTA城崎",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285746953,
+      "tags": {
+        "addr:block_number": "1182",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市別宮1182",
+        "addr:neighbourhood": "別宮",
+        "addr:postcode": "667-1128",
+        "addr:province": "兵庫県",
+        "name": "キャンプ場 ニュー桂屋",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285746956,
+      "tags": {
+        "addr:block_number": "1713",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市上野1713",
+        "addr:neighbourhood": "上野",
+        "addr:postcode": "667-0131",
+        "addr:province": "兵庫県",
+        "name": "「兵庫県養父市はさまじ",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285769096,
+      "tags": {
+        "addr:block_number": "15-11",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市中央区中尾町15-11",
+        "addr:neighbourhood": "中尾町",
+        "addr:postcode": "651-0057",
+        "addr:province": "兵庫県",
+        "addr:suburb": "中央区",
+        "name": "KOBE TERRACE",
+        "phone": "078-252-0055",
+        "tourism": "camp_site",
+        "website": "https://kobesaryo.com/glamping/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285769097,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市兵庫区烏原町字ヌク谷1番地",
+        "addr:neighbourhood": "烏原町字ヌク谷",
+        "addr:postcode": "652-0001",
+        "addr:province": "兵庫県",
+        "addr:suburb": "兵庫区",
+        "name": "菊水キャンプ",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285775235,
+      "tags": {
+        "addr:block_number": "300",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町小代区大谷300",
+        "addr:neighbourhood": "小代区大谷",
+        "addr:postcode": "667-1503",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "朝日と風を感じるキャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285780094,
+      "tags": {
+        "addr:block_number": "31",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市山崎町塩山31",
+        "addr:neighbourhood": "山崎町塩山",
+        "addr:postcode": "671-2560",
+        "addr:province": "兵庫県",
+        "name": "Tonttu Hijima（トントゥ ヒジマ）",
+        "phone": "090-5258-9868",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285780096,
+      "tags": {
+        "addr:block_number": "775",
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市安富町関775",
+        "addr:neighbourhood": "安富町関",
+        "addr:postcode": "671-2416",
+        "addr:province": "兵庫県",
+        "name": "鹿ヶ壺キャンプフィールド",
+        "phone": "0790-66-3505",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285780100,
+      "tags": {
+        "addr:block_number": "3-4",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市油井3-4",
+        "addr:neighbourhood": "油井",
+        "addr:postcode": "669-2114",
+        "addr:province": "兵庫県",
+        "name": "ササヤマベース",
+        "tourism": "camp_site",
+        "website": "https://sasayama-base.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285784483,
+      "tags": {
+        "addr:block_number": "207",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市波賀町戸倉207",
+        "addr:neighbourhood": "波賀町戸倉",
+        "addr:postcode": "671-4201",
+        "addr:province": "兵庫県",
+        "name": "Tokura Camp Base",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285784572,
+      "tags": {
+        "addr:block_number": "1857",
+        "addr:city": "三田市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三田市末1857",
+        "addr:neighbourhood": "末",
+        "addr:postcode": "669-1303",
+        "addr:province": "兵庫県",
+        "name": "ベジばぁばオートキャンプ場",
+        "tourism": "camp_site",
+        "website": "https://fujiwaranouen.com/camp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285784575,
+      "tags": {
+        "addr:block_number": "1723",
+        "addr:city": "三田市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三田市波豆川1723",
+        "addr:neighbourhood": "波豆川",
+        "addr:postcode": "669-1411",
+        "addr:province": "兵庫県",
+        "glamping": "yes",
+        "name": "兵庫・三田 焚き火×BBQを楽しむ貸切グランピング",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285784578,
+      "tags": {
+        "addr:block_number": "1266-10",
+        "addr:city": "三田市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三田市木器南下山1266-10",
+        "addr:neighbourhood": "木器南下山",
+        "addr:postcode": "669-1412",
+        "addr:province": "兵庫県",
+        "name": "神戸三田アウトドアビレッジ TEMIL",
+        "phone": "079-569-1016",
+        "tourism": "camp_site",
+        "website": "http://sanda.shosapo.jp/sanda/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285784579,
+      "tags": {
+        "addr:block_number": "1-99",
+        "addr:city": "宝塚市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宝塚市大原野寒山1-99",
+        "addr:neighbourhood": "大原野寒山",
+        "addr:postcode": "669-1211",
+        "addr:province": "兵庫県",
+        "name": "寒山マイケルヴィレッジキャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285784580,
+      "tags": {
+        "addr:block_number": "712-4",
+        "addr:city": "赤穂郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂郡上郡町岩木甲712-4",
+        "addr:neighbourhood": "岩木甲",
+        "addr:postcode": "678-1262",
+        "addr:province": "兵庫県",
+        "addr:suburb": "上郡町",
+        "name": "BAMPO CAMP SITE (Bansyu Model Plane Airport＆Camp)",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836874,
+      "tags": {
+        "addr:block_number": "36",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市氷上町上新庄36",
+        "addr:neighbourhood": "氷上町上新庄",
+        "addr:postcode": "669-3613",
+        "addr:province": "兵庫県",
+        "name": "モニカチャペル前キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836878,
+      "tags": {
+        "addr:block_number": "340-1",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡神河町新田340-1",
+        "addr:neighbourhood": "新田",
+        "addr:postcode": "679-2401",
+        "addr:province": "兵庫県",
+        "addr:suburb": "神河町",
+        "name": "新田ふるさと村",
+        "phone": "0790-33-0870",
+        "tourism": "camp_site",
+        "website": "http://www.shindenfurusato.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836881,
+      "tags": {
+        "addr:block_number": "519-2",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市千種町鷹巣519-2",
+        "addr:neighbourhood": "千種町鷹巣",
+        "addr:postcode": "671-3212",
+        "addr:province": "兵庫県",
+        "name": "たかのす里山キャンプ場",
+        "phone": "080-8500-5535",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836883,
+      "tags": {
+        "addr:block_number": "368-366",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町東河内字岡の上368-366",
+        "addr:neighbourhood": "一宮町東河内字岡の上",
+        "addr:postcode": "671-4141",
+        "addr:province": "兵庫県",
+        "glamping": "yes",
+        "name": "STAR RESORT コテージ 小さなソロキャンプ場 グランピング",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836884,
+      "tags": {
+        "addr:block_number": "1-6",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市小原1-6",
+        "addr:neighbourhood": "小原",
+        "addr:postcode": "669-2604",
+        "addr:province": "兵庫県",
+        "name": "Chillout camp Eden",
+        "tourism": "camp_site",
+        "website": "https://sites.google.com/view/chilloutcampeden/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836885,
+      "tags": {
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡神河町上小田",
+        "addr:neighbourhood": "上小田",
+        "addr:postcode": "679-3125",
+        "addr:province": "兵庫県",
+        "addr:suburb": "神河町",
+        "glamping": "yes",
+        "name": "峰山わんぱく冒険キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836887,
+      "tags": {
+        "addr:block_number": "242-1",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡神河町越知242-1",
+        "addr:neighbourhood": "越知",
+        "addr:postcode": "679-2404",
+        "addr:province": "兵庫県",
+        "addr:suburb": "神河町",
+        "name": "越知谷キャンプ アグリビレッジ",
+        "tourism": "camp_site",
+        "website": "https://ochidani.camp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285836889,
+      "tags": {
+        "addr:block_number": "1218",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市山崎町上ノ1218",
+        "addr:neighbourhood": "山崎町上ノ",
+        "addr:postcode": "671-2501",
+        "addr:province": "兵庫県",
+        "name": "キャンプ古民家宿しっぽのそよ風",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285839642,
+      "tags": {
+        "addr:block_number": "1708",
+        "addr:city": "三木市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三木市志染町三津田1708",
+        "addr:neighbourhood": "志染町三津田",
+        "addr:postcode": "673-0515",
+        "addr:province": "兵庫県",
+        "name": "みきぼうパークキャンプ場",
+        "phone": "0120-953-697",
+        "tourism": "camp_site",
+        "website": "https://miki.parkcamp.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285839648,
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市北区山田町小部字大ツエ10",
+        "addr:neighbourhood": "山田町小部字大ツエ",
+        "addr:postcode": "651-1101",
+        "addr:province": "兵庫県",
+        "addr:suburb": "北区",
+        "name": "キャンプ場ビギン",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285843403,
+      "tags": {
+        "addr:block_number": "1051-43",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡市川町奥1051-43",
+        "addr:neighbourhood": "奥",
+        "addr:postcode": "679-2325",
+        "addr:province": "兵庫県",
+        "addr:suburb": "市川町",
+        "name": "癒しの家キャンプ場",
+        "phone": "06-6362-9368",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285843407,
+      "tags": {
+        "addr:block_number": "5-1",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市今田町下立杭5-1",
+        "addr:neighbourhood": "今田町下立杭",
+        "addr:postcode": "669-2141",
+        "addr:province": "兵庫県",
+        "name": "立杭てらす",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285843408,
+      "tags": {
+        "addr:block_number": "76",
+        "addr:city": "たつの市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県たつの市新宮町下莇原76",
+        "addr:neighbourhood": "新宮町下莇原",
+        "addr:postcode": "679-5161",
+        "addr:province": "兵庫県",
+        "name": "ポパイテンキャンプ場 たつの店",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285845194,
+      "tags": {
+        "addr:block_number": "732-1",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市垂水区下畑町732-1",
+        "addr:neighbourhood": "下畑町",
+        "addr:postcode": "655-0861",
+        "addr:province": "兵庫県",
+        "addr:suburb": "垂水区",
+        "name": "グリーンテラス神戸・垂水",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285903516,
+      "tags": {
+        "addr:block_number": "2589",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市由良町由良2589",
+        "addr:neighbourhood": "由良町由良",
+        "addr:postcode": "656-2543",
+        "addr:province": "兵庫県",
+        "glamping": "yes",
+        "name": "Yura Green",
+        "tourism": "camp_site",
+        "website": "https://yura-green.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285903521,
+      "tags": {
+        "addr:block_number": "1367",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市阿万吹上町1367",
+        "addr:neighbourhood": "阿万吹上町",
+        "addr:postcode": "656-0542",
+        "addr:province": "兵庫県",
+        "name": "焚き火base～HOKAGE～ 焚火体験・サウナ・キャンプ",
+        "phone": "090-7216-8519",
+        "tourism": "camp_site",
+        "website": "https://hokage-takibibase.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906403,
+      "tags": {
+        "addr:block_number": "611",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市野島江崎611",
+        "addr:neighbourhood": "野島江崎",
+        "addr:postcode": "656-1725",
+        "addr:province": "兵庫県",
+        "glamping": "yes",
+        "name": "コスタブルーあわじ西海岸",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906404,
+      "tags": {
+        "addr:block_number": "2905-15",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市楠本2905番15",
+        "addr:neighbourhood": "楠本",
+        "addr:postcode": "656-2301",
+        "addr:province": "兵庫県",
+        "name": "オートキャンプ淡路島Virgin Valley",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906409,
+      "tags": {
+        "addr:block_number": "4366-1",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市尾崎4366-1",
+        "addr:neighbourhood": "尾崎",
+        "addr:postcode": "656-1501",
+        "addr:province": "兵庫県",
+        "name": "Container Base A-jan",
+        "phone": "0799-70-8601",
+        "tourism": "camp_site",
+        "website": "https://a-jan.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906410,
+      "tags": {
+        "addr:block_number": "1028-1",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市郡家1028-1",
+        "addr:neighbourhood": "郡家",
+        "addr:postcode": "656-1511",
+        "addr:province": "兵庫県",
+        "name": "PICNIC GARDEN",
+        "phone": "0799-85-0316",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906412,
+      "tags": {
+        "addr:block_number": "718",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市遠田718",
+        "addr:neighbourhood": "遠田",
+        "addr:postcode": "656-1503",
+        "addr:province": "兵庫県",
+        "name": "N& CAMP FIELD",
+        "phone": "070-1068-6875",
+        "tourism": "camp_site",
+        "website": "https://n-andcampfield.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906714,
+      "tags": {
+        "addr:block_number": "167",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市五色町鮎原中邑167",
+        "addr:neighbourhood": "五色町鮎原中邑",
+        "addr:postcode": "656-1321",
+        "addr:province": "兵庫県",
+        "name": "マウントレイクキャンプ場",
+        "phone": "090-7363-1155",
+        "tourism": "camp_site",
+        "website": "https://mount-lake.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906718,
+      "tags": {
+        "addr:block_number": "2359",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市五色町鳥飼浦2359",
+        "addr:neighbourhood": "五色町鳥飼浦",
+        "addr:postcode": "656-1344",
+        "addr:province": "兵庫県",
+        "glamping": "yes",
+        "name": "FBI AWAJI First class Backpackers Inn.",
+        "phone": "0799-34-0900",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906719,
+      "tags": {
+        "addr:block_number": "2003-1",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市五色町上堺2003-1",
+        "addr:neighbourhood": "五色町上堺",
+        "addr:postcode": "656-1336",
+        "addr:province": "兵庫県",
+        "name": "THE CHILL CAMP",
+        "tourism": "camp_site",
+        "website": "https://the.chillcamps.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906720,
+      "tags": {
+        "addr:block_number": "731-5",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市五色町鳥飼浦731-5",
+        "addr:neighbourhood": "五色町鳥飼浦",
+        "addr:postcode": "656-1344",
+        "addr:province": "兵庫県",
+        "name": "RVパーク 五色浜サンセットビュー淡路島",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906722,
+      "tags": {
+        "addr:block_number": "1344",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市湊1344",
+        "addr:neighbourhood": "湊",
+        "addr:postcode": "656-0332",
+        "addr:province": "兵庫県",
+        "name": "リアンみなと",
+        "phone": "070-1468-2847",
+        "tourism": "camp_site",
+        "website": "https://lienminato.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906724,
+      "tags": {
+        "addr:block_number": "1224-3",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市湊1224番3",
+        "addr:neighbourhood": "湊",
+        "addr:postcode": "656-0332",
+        "addr:province": "兵庫県",
+        "name": "THE BOND-camp＆sauna-",
+        "tourism": "camp_site",
+        "website": "https://www.unreal-awaji.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906725,
+      "tags": {
+        "addr:block_number": "1319-1",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市津井1319-1",
+        "addr:neighbourhood": "津井",
+        "addr:postcode": "656-0341",
+        "addr:province": "兵庫県",
+        "name": "淡路島西海岸オートキャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906726,
+      "tags": {
+        "addr:block_number": "105-2",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市松帆脇田甲105-2",
+        "addr:neighbourhood": "松帆脇田甲",
+        "addr:postcode": "656-0312",
+        "addr:province": "兵庫県",
+        "name": "淡路島かわらや田園キャンプ場",
+        "tourism": "camp_site",
+        "website": "https://www.awaji-taiken.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906728,
+      "tags": {
+        "addr:block_number": "693",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市中条中筋693",
+        "addr:neighbourhood": "中条中筋",
+        "addr:postcode": "656-0143",
+        "addr:province": "兵庫県",
+        "glamping": "yes",
+        "name": "グランドームオルオル",
+        "phone": "0799-20-5051",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906729,
+      "tags": {
+        "addr:block_number": "205-2",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市前平205-2",
+        "addr:neighbourhood": "前平",
+        "addr:postcode": "656-0044",
+        "addr:province": "兵庫県",
+        "name": "RVパーク 淡路島の郷 前平ベース",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14285906730,
+      "tags": {
+        "addr:block_number": "476",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市鮎屋476番地",
+        "addr:neighbourhood": "鮎屋",
+        "addr:postcode": "656-0111",
+        "addr:province": "兵庫県",
+        "name": "あわじ島 鮎屋組 滝テラス",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14286668891,
+      "tags": {
+        "addr:block_number": "1817-1",
+        "addr:city": "三田市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三田市香下1817-1",
+        "addr:neighbourhood": "香下",
+        "addr:postcode": "669-1507",
+        "addr:province": "兵庫県",
+        "check_date": "2026-10-15",
+        "name": "関西学院千刈キャンプ",
+        "phone": "079-563-5233",
+        "tourism": "camp_site",
+        "website": "https://www.kwansei.ac.jp/f_sengari/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14286934758,
+      "tags": {
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡新温泉町居組",
+        "addr:neighbourhood": "居組",
+        "addr:postcode": "669-6751",
+        "addr:province": "兵庫県",
+        "addr:suburb": "新温泉町",
+        "name": "居組県民サンビーチキャンプ場",
+        "phone": "0796-82-4580",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14286934767,
+      "tags": {
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市城崎町結",
+        "addr:neighbourhood": "城崎町結",
+        "addr:postcode": "669-6113",
+        "addr:province": "兵庫県",
+        "name": "水穂之国幸せのキャンプ場",
+        "phone": "0796-32-3245",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287059081,
+      "tags": {
+        "addr:block_number": "853-1",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡新温泉町芦屋853-1",
+        "addr:neighbourhood": "芦屋",
+        "addr:postcode": "669-6701",
+        "addr:province": "兵庫県",
+        "addr:suburb": "新温泉町",
+        "name": "浜坂県民サンビーチキャンプ場",
+        "phone": "0796-82-4580",
+        "tourism": "camp_site",
+        "website": "https://www.hamasaka.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287059086,
+      "tags": {
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡新温泉町諸寄",
+        "addr:neighbourhood": "諸寄",
+        "addr:postcode": "669-6753",
+        "addr:province": "兵庫県",
+        "addr:suburb": "新温泉町",
+        "name": "諸寄キャンプ場",
+        "phone": "0796-82-1409",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287059089,
+      "tags": {
+        "addr:block_number": "334",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市竹野町東大谷334",
+        "addr:neighbourhood": "竹野町東大谷",
+        "addr:postcode": "669-6228",
+        "addr:province": "兵庫県",
+        "name": "たけのこ村キャンプ場",
+        "phone": "0796-47-0250",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287072703,
+      "tags": {
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市竹野町竹野弁天浜",
+        "addr:neighbourhood": "竹野町竹野弁天浜",
+        "addr:postcode": "669-6201",
+        "addr:province": "兵庫県",
+        "name": "弁天浜キャンプ場",
+        "tourism": "camp_site",
+        "website": "https://bentenhama.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287072705,
+      "tags": {
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町香住区境字今子",
+        "addr:neighbourhood": "香住区境字今子",
+        "addr:postcode": "669-6544",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "今子浦キャンプ場",
+        "phone": "0796-36-2650",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287072708,
+      "tags": {
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町香住区下浜三田浜",
+        "addr:neighbourhood": "香住区下浜三田浜",
+        "addr:postcode": "669-6564",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "とちみたキャンプ場",
+        "phone": "0796-36-4333",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287072717,
+      "tags": {
+        "addr:block_number": "308",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町香住区七日市308",
+        "addr:neighbourhood": "香住区七日市",
+        "addr:postcode": "669-6546",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "glamping": "yes",
+        "name": "グランピングサイト IPPEN",
+        "phone": "0796-34-8797",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287084571,
+      "tags": {
+        "addr:block_number": "14-3",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町村岡区原14-3",
+        "addr:neighbourhood": "村岡区原",
+        "addr:postcode": "667-1362",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "畑の中のキャンプ場",
+        "phone": "0796-80-2154",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287116226,
+      "tags": {
+        "addr:block_number": "1684-5",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡新温泉町飯野1684-5",
+        "addr:neighbourhood": "飯野",
+        "addr:postcode": "669-6832",
+        "addr:province": "兵庫県",
+        "addr:suburb": "新温泉町",
+        "name": "草太園地キャンプ場",
+        "phone": "0796-92-1713",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287116232,
+      "tags": {
+        "addr:block_number": "499",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市目坂499",
+        "addr:neighbourhood": "目坂",
+        "addr:postcode": "668-0077",
+        "addr:province": "兵庫県",
+        "name": "豊岡市立奈佐森林公園キャンプ場",
+        "phone": "0796-24-7411",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287123130,
+      "tags": {
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市岩井",
+        "addr:neighbourhood": "岩井",
+        "addr:postcode": "668-0081",
+        "addr:province": "兵庫県",
+        "name": "Airport Campsite in TAJIMA / 但馬空港キャンプ場",
+        "phone": "080-2516-1443",
+        "tourism": "camp_site",
+        "website": "https://airport-camp.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287125333,
+      "tags": {
+        "addr:block_number": "4",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市日高町太田4",
+        "addr:neighbourhood": "日高町太田",
+        "addr:postcode": "669-5371",
+        "addr:province": "兵庫県",
+        "name": "nannatto",
+        "phone": "080-9552-0021",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287125344,
+      "tags": {
+        "addr:block_number": "1064-2",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町村岡区柤岡1064-2",
+        "addr:neighbourhood": "村岡区柤岡",
+        "addr:postcode": "667-1354",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "けび大池公園",
+        "phone": "090-8484-1064",
+        "tourism": "camp_site",
+        "website": "https://kebiooike3.wixsite.com/kebiooike"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287131977,
+      "tags": {
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市出石町袴狭",
+        "addr:neighbourhood": "出石町袴狭",
+        "addr:province": "兵庫県",
+        "name": "白糸の滝キャンプ場",
+        "phone": "0796-52-4816",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287157920,
+      "tags": {
+        "addr:block_number": "1510",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市日高町羽尻1510",
+        "addr:neighbourhood": "日高町羽尻",
+        "addr:postcode": "669-5359",
+        "addr:province": "兵庫県",
+        "name": "湯の原温泉オートキャンプ場",
+        "phone": "0796-44-0001",
+        "tourism": "camp_site",
+        "website": "http://yunohara.camp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287170898,
+      "tags": {
+        "addr:block_number": "560",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町小代区城山560",
+        "addr:neighbourhood": "小代区城山",
+        "addr:postcode": "667-1502",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "星の草原キャンプ場",
+        "phone": "0796-97-2717",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287171068,
+      "tags": {
+        "addr:block_number": "300",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町小代区大谷300",
+        "addr:neighbourhood": "小代区大谷",
+        "addr:postcode": "667-1503",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "風を感じる宙の森キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287171083,
+      "tags": {
+        "addr:block_number": "791-1",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町村岡区宿791-1",
+        "addr:neighbourhood": "村岡区宿",
+        "addr:postcode": "667-1336",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "兵庫県立兎和野高原野外教育センター",
+        "phone": "0796-94-0211",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287172403,
+      "tags": {
+        "addr:block_number": "882",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市出石町福住882",
+        "addr:neighbourhood": "出石町福住",
+        "addr:postcode": "668-0263",
+        "addr:province": "兵庫県",
+        "name": "温楽ノ森",
+        "phone": "0796-34-8887",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287172404,
+      "tags": {
+        "addr:block_number": "785",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市日高町伊府785",
+        "addr:neighbourhood": "日高町伊府",
+        "addr:postcode": "669-5346",
+        "addr:province": "兵庫県",
+        "name": "植村直己冒険館 どんぐりbase",
+        "tourism": "camp_site",
+        "website": "https://boukenkan.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287172406,
+      "tags": {
+        "addr:block_number": "165",
+        "addr:city": "豊岡市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県豊岡市但東町正法寺165",
+        "addr:neighbourhood": "但東町正法寺",
+        "addr:postcode": "668-0361",
+        "addr:province": "兵庫県",
+        "name": "シルク温泉キャンプ場",
+        "tourism": "camp_site",
+        "website": "https://silk-yamabiko.co.jp/outdoor/camp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287270076,
+      "tags": {
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町村岡区大笹たたら",
+        "addr:neighbourhood": "村岡区大笹たたら",
+        "addr:postcode": "667-1344",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "もののけの森 グリーンパークハチ北",
+        "tourism": "camp_site",
+        "website": "https://hachikita.jp/greenpark/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287270079,
+      "tags": {
+        "addr:block_number": "773",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市奥米地773",
+        "addr:neighbourhood": "奥米地",
+        "addr:postcode": "667-0121",
+        "addr:province": "兵庫県",
+        "name": "ほたるの館・希望王国",
+        "phone": "079-665-0588",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287270082,
+      "tags": {
+        "addr:block_number": "1584",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市大久保1584番地",
+        "addr:neighbourhood": "大久保",
+        "addr:postcode": "667-1127",
+        "addr:province": "兵庫県",
+        "name": "ハチ高原オートキャンプ場",
+        "tourism": "camp_site",
+        "website": "http://www.okaguchiya.com/8camp/index.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287270085,
+      "tags": {
+        "addr:block_number": "881-1",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市丹戸字越中881番1",
+        "addr:neighbourhood": "丹戸字越中",
+        "addr:postcode": "667-1124",
+        "addr:province": "兵庫県",
+        "name": "ハチ高原 THE PARK",
+        "phone": "079-667-8001",
+        "tourism": "camp_site",
+        "website": "https://hachi-thepark.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287271000,
+      "tags": {
+        "addr:block_number": "175-10",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市波賀町鹿伏175-10",
+        "addr:neighbourhood": "波賀町鹿伏",
+        "addr:postcode": "671-4203",
+        "addr:province": "兵庫県",
+        "name": "くるみの里",
+        "phone": "0790-73-0348",
+        "tourism": "camp_site",
+        "website": "http://ooyaski.com/kuruminosato/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287292875,
+      "tags": {
+        "addr:block_number": "582",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市大屋町加保582",
+        "addr:neighbourhood": "大屋町加保",
+        "addr:postcode": "667-0315",
+        "addr:province": "兵庫県",
+        "name": "あゆ公園",
+        "tourism": "camp_site",
+        "website": "https://ayupark.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287292880,
+      "tags": {
+        "addr:block_number": "153-2",
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市多々良木灰原153-2",
+        "addr:neighbourhood": "多々良木灰原",
+        "addr:province": "兵庫県",
+        "name": "緑ヶ丘キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287292885,
+      "tags": {
+        "addr:block_number": "822",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市大屋町筏822",
+        "addr:neighbourhood": "大屋町筏",
+        "addr:postcode": "667-0322",
+        "addr:province": "兵庫県",
+        "name": "天滝公園キャンプ場",
+        "phone": "079-669-1584",
+        "tourism": "camp_site",
+        "website": "http://www.tendaki.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287293026,
+      "tags": {
+        "addr:block_number": "1713",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市上野1713番地",
+        "addr:neighbourhood": "上野",
+        "addr:postcode": "667-0131",
+        "addr:province": "兵庫県",
+        "name": "はさまじ里山の森公園キャンプエリア",
+        "tourism": "camp_site",
+        "website": "https://www.hasamaji.jp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287293029,
+      "tags": {
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市和田山町室尾",
+        "addr:neighbourhood": "和田山町室尾",
+        "addr:province": "兵庫県",
+        "name": "朝来市室尾森林自然公園野外活動センター",
+        "phone": "079-675-2734",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287293030,
+      "tags": {
+        "addr:block_number": "509-1",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市奈良尾509-1",
+        "addr:neighbourhood": "奈良尾",
+        "addr:postcode": "667-1125",
+        "addr:province": "兵庫県",
+        "name": "逆水キャンプ場",
+        "phone": "079-667-8327",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287296170,
+      "tags": {
+        "addr:block_number": "535-1",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町村岡区大笹535-1",
+        "addr:neighbourhood": "村岡区大笹",
+        "addr:postcode": "667-1344",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "森とぼくの休日 HACHIKITA CAMP FIELD",
+        "tourism": "camp_site",
+        "website": "https://www.moritobokunokyujitsu.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287296171,
+      "tags": {
+        "addr:block_number": "575-1",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町村岡区大笹575-1",
+        "addr:neighbourhood": "村岡区大笹",
+        "addr:postcode": "667-1344",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "星降る森 天-ten-",
+        "phone": "090-4762-5353",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287296174,
+      "tags": {
+        "addr:block_number": "551-2",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町村岡区大笹551-2",
+        "addr:neighbourhood": "村岡区大笹",
+        "addr:postcode": "667-1344",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "ロッヂ野間キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287296179,
+      "tags": {
+        "addr:block_number": "1219-1",
+        "addr:city": "美方郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県美方郡香美町小代区新屋1219-1",
+        "addr:neighbourhood": "小代区新屋",
+        "addr:postcode": "667-1532",
+        "addr:province": "兵庫県",
+        "addr:suburb": "香美町",
+        "name": "おじろじろキャンプ場",
+        "tourism": "camp_site",
+        "website": "http://ojirojiro.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287329749,
+      "tags": {
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市森",
+        "addr:neighbourhood": "森",
+        "addr:postcode": "667-0141",
+        "addr:province": "兵庫県",
+        "name": "ログハウスとキャンプの古代村",
+        "tourism": "camp_site",
+        "website": "https://kodaimura.net"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287329755,
+      "tags": {
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市山東町粟鹿",
+        "addr:neighbourhood": "山東町粟鹿",
+        "addr:province": "兵庫県",
+        "name": "さんとうアウトドアビレッジ",
+        "phone": "079-676-4100",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287333844,
+      "tags": {
+        "addr:block_number": "99-2",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市大屋町若杉99-2",
+        "addr:neighbourhood": "大屋町若杉",
+        "addr:postcode": "667-0323",
+        "addr:province": "兵庫県",
+        "name": "若杉高原おおやキャンプ場",
+        "phone": "079-669-1576",
+        "tourism": "camp_site",
+        "website": "https://ooyaski.com/camp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287333849,
+      "tags": {
+        "addr:block_number": "178-1",
+        "addr:city": "養父市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県養父市大屋町明延178-1",
+        "addr:neighbourhood": "大屋町明延",
+        "addr:postcode": "667-0436",
+        "addr:province": "兵庫県",
+        "name": "養父市立旭山野外活動センター",
+        "phone": "079-668-0258",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287359166,
+      "tags": {
+        "addr:block_number": "809",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市市島町徳尾809",
+        "addr:neighbourhood": "市島町徳尾",
+        "addr:postcode": "669-4345",
+        "addr:province": "兵庫県",
+        "name": "大杉ダム自然公園オートキャンプ場",
+        "phone": "0795-80-3553",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287359171,
+      "tags": {
+        "addr:block_number": "727-2",
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市多々良木727-2",
+        "addr:neighbourhood": "多々良木",
+        "addr:postcode": "679-3423",
+        "addr:province": "兵庫県",
+        "name": "多々良木フォレストリゾート CoCoDe",
+        "phone": "079-678-1414",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287359173,
+      "tags": {
+        "addr:block_number": "1095-1",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市青垣町大名草1095-1",
+        "addr:neighbourhood": "青垣町大名草",
+        "addr:postcode": "669-3822",
+        "addr:province": "兵庫県",
+        "name": "Dinosaur Base",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287365302,
+      "tags": {
+        "addr:block_number": "66-1",
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市佐嚢土肥上山66-1",
+        "addr:neighbourhood": "佐嚢土肥上山",
+        "addr:postcode": "669-5200",
+        "addr:province": "兵庫県",
+        "name": "馬場山キャンプ場",
+        "phone": "079-677-1855",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287372336,
+      "tags": {
+        "addr:block_number": "32-2",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市青垣町西芦田32-2",
+        "addr:neighbourhood": "青垣町西芦田",
+        "addr:postcode": "669-3803",
+        "addr:province": "兵庫県",
+        "name": "丹波少年自然の家",
+        "phone": "0795-87-1633",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287372343,
+      "tags": {
+        "addr:block_number": "1047-218",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市千種町西河内1047-218",
+        "addr:neighbourhood": "千種町西河内",
+        "addr:postcode": "671-3233",
+        "addr:province": "兵庫県",
+        "name": "CHIKUSA Mountain Village",
+        "phone": "0790-76-3555",
+        "tourism": "camp_site",
+        "website": "https://www.chikusakogen.com/camp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287372349,
+      "tags": {
+        "addr:block_number": "560-1",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市波賀町原560-1",
+        "addr:neighbourhood": "波賀町原",
+        "addr:postcode": "671-4213",
+        "addr:province": "兵庫県",
+        "name": "グリーンハウスみちの丘",
+        "phone": "0790-75-3600",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287372352,
+      "tags": {
+        "addr:block_number": "4-2",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町公文4-2",
+        "addr:neighbourhood": "一宮町公文",
+        "addr:postcode": "671-4111",
+        "addr:province": "兵庫県",
+        "name": "ロクロシキャンプ場",
+        "phone": "0790-72-1000",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287372353,
+      "tags": {
+        "addr:block_number": "52-1",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市市島町与戸長尾52-1",
+        "addr:neighbourhood": "市島町与戸長尾",
+        "addr:province": "兵庫県",
+        "name": "キャンプリゾート森のひととき",
+        "phone": "0795-78-9111",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287381063,
+      "tags": {
+        "addr:block_number": "1784-29",
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市生野町栃原1784-29",
+        "addr:neighbourhood": "生野町栃原",
+        "addr:postcode": "679-3331",
+        "addr:province": "兵庫県",
+        "name": "SUGOMoRIリゾート生野高原",
+        "phone": "050-8888-7982",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287381066,
+      "tags": {
+        "addr:block_number": "41-1",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市遠方41-1",
+        "addr:neighbourhood": "遠方",
+        "addr:postcode": "669-2704",
+        "addr:province": "兵庫県",
+        "name": "草むらの學校",
+        "tourism": "camp_site",
+        "website": "https://kusamura-no-gakko.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287381068,
+      "tags": {
+        "addr:block_number": "534-1",
+        "addr:city": "篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県篠山市遠方534-1",
+        "addr:neighbourhood": "遠方",
+        "addr:postcode": "669-2704",
+        "addr:province": "兵庫県",
+        "name": "アンの里",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287381069,
+      "tags": {
+        "addr:block_number": "41-1",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市遠方41-1",
+        "addr:neighbourhood": "遠方",
+        "addr:postcode": "669-2704",
+        "addr:province": "兵庫県",
+        "name": "湯あみ里山公園 PUCAPUCA COMMUNE",
+        "tourism": "camp_site",
+        "website": "https://pucapuca-commune.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287381077,
+      "tags": {
+        "addr:block_number": "1804",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町福知1804",
+        "addr:neighbourhood": "一宮町福知",
+        "addr:postcode": "671-4122",
+        "addr:province": "兵庫県",
+        "name": "MONJUNO FUKUCHI",
+        "phone": "0790-71-2464",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287384429,
+      "tags": {
+        "addr:city": "朝来市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県朝来市生野町上生野魚ヶ滝",
+        "addr:neighbourhood": "生野町上生野魚ヶ滝",
+        "addr:province": "兵庫県",
+        "name": "魚ヶ滝荘キャンプ場",
+        "phone": "079-679-4334",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287384431,
+      "tags": {
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町千町",
+        "addr:neighbourhood": "一宮町千町",
+        "addr:province": "兵庫県",
+        "name": "千町ヶ峰こぶしの村キャンプ場",
+        "phone": "0790-74-1524",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287384433,
+      "tags": {
+        "addr:block_number": "685",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町三方町685番地",
+        "addr:neighbourhood": "一宮町三方町",
+        "addr:postcode": "671-4113",
+        "addr:province": "兵庫県",
+        "name": "みかたの里 まほろばの湯オートキャンプ場",
+        "phone": "0790-74-1000",
+        "tourism": "camp_site",
+        "website": "https://mahoroba-onsen.jp/camp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287384440,
+      "tags": {
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市春日町多利",
+        "addr:neighbourhood": "春日町多利",
+        "addr:postcode": "669-4123",
+        "addr:province": "兵庫県",
+        "name": "日ヶ奥渓谷キャンプ場",
+        "phone": "0795-74-2423",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287384442,
+      "tags": {
+        "addr:block_number": "1278",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市春日町長王カタギダニ1278",
+        "addr:neighbourhood": "春日町長王カタギダニ",
+        "addr:postcode": "669-3403",
+        "addr:province": "兵庫県",
+        "name": "SPRING DAY LINKS",
+        "phone": "0795-71-6630",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287396893,
+      "tags": {
+        "addr:block_number": "920",
+        "addr:city": "佐用郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県佐用郡佐用町奥海920",
+        "addr:neighbourhood": "奥海",
+        "addr:postcode": "679-5324",
+        "addr:province": "兵庫県",
+        "addr:suburb": "佐用町",
+        "name": "おねみ渓谷キャンプ場",
+        "phone": "080-1507-2703",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287396899,
+      "tags": {
+        "addr:block_number": "1153-2",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市柏原町大新屋1153-2",
+        "addr:neighbourhood": "柏原町大新屋",
+        "addr:postcode": "669-3315",
+        "addr:province": "兵庫県",
+        "name": "丹波悠遊の森",
+        "phone": "0795-72-3285",
+        "tourism": "camp_site",
+        "website": "http://tamba-yuyu.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287396900,
+      "tags": {
+        "addr:block_number": "638-366",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一ノ宮町東河内字岡の上638-366",
+        "addr:neighbourhood": "一ノ宮町東河内字岡の上",
+        "addr:postcode": "671-4141",
+        "addr:province": "兵庫県",
+        "name": "スターリゾート 小さなソロキャンプ場",
+        "phone": "090-3845-6790",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287402803,
+      "tags": {
+        "addr:block_number": "561",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市筱見561",
+        "addr:neighbourhood": "筱見",
+        "addr:postcode": "669-2534",
+        "addr:province": "兵庫県",
+        "name": "筱見四十八滝キャンプ場",
+        "phone": "079-557-1161",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287403397,
+      "tags": {
+        "addr:block_number": "91",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市栃梨91",
+        "addr:neighbourhood": "栃梨",
+        "addr:postcode": "669-2525",
+        "addr:province": "兵庫県",
+        "name": "iBASHO",
+        "phone": "090-8523-8968",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287403398,
+      "tags": {
+        "addr:block_number": "872-14",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町伊和872-14",
+        "addr:neighbourhood": "一宮町伊和",
+        "addr:province": "兵庫県",
+        "name": "一宮ウッディパークキャンプ場",
+        "phone": "0790-72-1331",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405183,
+      "tags": {
+        "addr:block_number": "594-1",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市瀬利594-1",
+        "addr:neighbourhood": "瀬利",
+        "addr:postcode": "669-2303",
+        "addr:province": "兵庫県",
+        "name": "TASTE HOUSE ～ZEN～",
+        "tourism": "camp_site",
+        "website": "https://tastehousezen-official.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405186,
+      "tags": {
+        "addr:block_number": "231-1",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市矢代231-1",
+        "addr:neighbourhood": "矢代",
+        "addr:postcode": "669-2356",
+        "addr:province": "兵庫県",
+        "name": "ユニトピアささやま「CAMP&VILLAGE」",
+        "phone": "079-552-5227",
+        "tourism": "camp_site",
+        "website": "https://candv.pgu.or.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405189,
+      "tags": {
+        "addr:block_number": "1090-3",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町東市場1090-3",
+        "addr:neighbourhood": "一宮町東市場",
+        "addr:postcode": "671-4132",
+        "addr:province": "兵庫県",
+        "name": "国見の丘山荘花咲",
+        "phone": "0790-72-1331",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405191,
+      "tags": {
+        "addr:block_number": "1090-3",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町東市場1090-3",
+        "addr:neighbourhood": "一宮町東市場",
+        "addr:postcode": "671-4132",
+        "addr:province": "兵庫県",
+        "name": "スポニックパーク一宮",
+        "phone": "0790-72-1331",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405192,
+      "tags": {
+        "addr:block_number": "1502-1",
+        "addr:city": "丹波市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波市山南町上滝1502-1",
+        "addr:neighbourhood": "山南町上滝",
+        "addr:postcode": "669-3101",
+        "addr:province": "兵庫県",
+        "name": "川代公園キャンプ場",
+        "phone": "0795-22-4000",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405195,
+      "tags": {
+        "addr:block_number": "1110-22",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市山崎町上ノ1110-22",
+        "addr:neighbourhood": "山崎町上ノ",
+        "addr:postcode": "671-2501",
+        "addr:province": "兵庫県",
+        "name": "green house Jasmine",
+        "phone": "080-1512-6671",
+        "tourism": "camp_site",
+        "website": "https://www.greenhouse-jasmine.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405196,
+      "tags": {
+        "addr:block_number": "222",
+        "addr:city": "佐用郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県佐用郡佐用町船越222番地",
+        "addr:neighbourhood": "船越",
+        "addr:postcode": "679-5227",
+        "addr:province": "兵庫県",
+        "addr:suburb": "佐用町",
+        "name": "南光自然観察村",
+        "phone": "050-8884-3553",
+        "tourism": "camp_site",
+        "website": "https://www.nanko-camp.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287405197,
+      "tags": {
+        "addr:block_number": "817-1",
+        "addr:city": "多可郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県多可郡多可町中区牧野817-1",
+        "addr:neighbourhood": "中区牧野",
+        "addr:postcode": "679-1103",
+        "addr:province": "兵庫県",
+        "addr:suburb": "多可町",
+        "name": "ヴィレッジフォレスト妙見",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287425711,
+      "tags": {
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市波賀町日見谷中川原",
+        "addr:neighbourhood": "波賀町日見谷中川原",
+        "addr:postcode": "671-4245",
+        "addr:province": "兵庫県",
+        "name": "WAKO PARKキャンプ場",
+        "phone": "0790-75-3860",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287425712,
+      "tags": {
+        "addr:block_number": "505-29",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市一宮町杉田505-29",
+        "addr:neighbourhood": "一宮町杉田",
+        "addr:postcode": "671-4139",
+        "addr:province": "兵庫県",
+        "name": "ビレッジリゾート",
+        "phone": "070-9426-7101",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287425715,
+      "tags": {
+        "addr:block_number": "459-3",
+        "addr:city": "篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県篠山市小坂459-3",
+        "addr:neighbourhood": "小坂",
+        "addr:postcode": "669-2731",
+        "addr:province": "兵庫県",
+        "name": "ハイマート佐仲オートキャンプ場",
+        "phone": "079-593-0888",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287425716,
+      "tags": {
+        "addr:block_number": "538-37",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市山崎町小茅野538-37",
+        "addr:neighbourhood": "山崎町小茅野",
+        "addr:postcode": "671-2561",
+        "addr:province": "兵庫県",
+        "name": "山崎アウトドアランド",
+        "phone": "0790-65-0666",
+        "tourism": "camp_site",
+        "website": "https://yamasakioutdoorland.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287425719,
+      "tags": {
+        "addr:block_number": "745-5",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市千種町下河野745-5",
+        "addr:neighbourhood": "千種町下河野",
+        "addr:postcode": "671-3225",
+        "addr:province": "兵庫県",
+        "name": "道の駅ちくさデイキャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287425725,
+      "tags": {
+        "addr:block_number": "1840-53",
+        "addr:city": "多可郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県多可郡多可町加美区豊部1840-53",
+        "addr:neighbourhood": "加美区豊部",
+        "addr:postcode": "679-1201",
+        "addr:province": "兵庫県",
+        "addr:suburb": "多可町",
+        "name": "青雲の杜キャンプ場（多可青雲の家）",
+        "tourism": "camp_site",
+        "website": "https://seiunnoie.amebaownd.com/pages/3658583/page_202003130921"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287425726,
+      "tags": {
+        "addr:block_number": "730",
+        "addr:city": "佐用郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県佐用郡佐用町船越730",
+        "addr:neighbourhood": "船越",
+        "addr:postcode": "679-5227",
+        "addr:province": "兵庫県",
+        "addr:suburb": "佐用町",
+        "name": "藤荘キャンプ場（佐用・船越）",
+        "tourism": "camp_site",
+        "website": "https://office-f-ltd.com/fujiso-campsite/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438360,
+      "tags": {
+        "addr:block_number": "871-14",
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市黒田庄町門柳871-14",
+        "addr:neighbourhood": "黒田庄町門柳",
+        "addr:postcode": "679-0312",
+        "addr:province": "兵庫県",
+        "name": "日時計の丘公園",
+        "phone": "0795-28-4851",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438362,
+      "tags": {
+        "addr:city": "篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県篠山市後川上",
+        "addr:neighbourhood": "後川上",
+        "addr:postcode": "669-2422",
+        "addr:province": "兵庫県",
+        "name": "丹波猪村キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438368,
+      "tags": {
+        "addr:block_number": "116",
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市安富町栃原116番地",
+        "addr:neighbourhood": "安富町栃原",
+        "addr:postcode": "671-2414",
+        "addr:province": "兵庫県",
+        "name": "とちわら こども自然体験キャンプ場",
+        "phone": "078-754-0137",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438371,
+      "tags": {
+        "addr:block_number": "1170",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市後川上1170",
+        "addr:neighbourhood": "後川上",
+        "addr:postcode": "669-2422",
+        "addr:province": "兵庫県",
+        "name": "丹波篠山渓谷の森公園",
+        "phone": "079-555-2323",
+        "tourism": "camp_site",
+        "website": "https://tambasasayama-keikokunomorikouen.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438372,
+      "tags": {
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市大木町",
+        "addr:neighbourhood": "大木町",
+        "addr:province": "兵庫県",
+        "name": "武嶋キャンプ場",
+        "phone": "0795-22-4000",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438375,
+      "tags": {
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市富吉上町",
+        "addr:neighbourhood": "富吉上町",
+        "addr:province": "兵庫県",
+        "name": "奥山キャンプ場",
+        "phone": "0795-22-4000",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438377,
+      "tags": {
+        "addr:block_number": "76",
+        "addr:city": "たつの市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県たつの市新宮町下莇原76",
+        "addr:neighbourhood": "新宮町下莇原",
+        "addr:postcode": "679-5161",
+        "addr:province": "兵庫県",
+        "name": "オートキャンプポパイテン たつの店",
+        "phone": "0791-60-1712",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438381,
+      "tags": {
+        "addr:block_number": "1930",
+        "addr:city": "佐用郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県佐用郡佐用町多賀1930",
+        "addr:neighbourhood": "多賀",
+        "addr:postcode": "679-5201",
+        "addr:province": "兵庫県",
+        "addr:suburb": "佐用町",
+        "name": "キャンプ＆コテージ ポパイテン",
+        "phone": "0790-78-1288",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438385,
+      "tags": {
+        "addr:block_number": "602-140",
+        "addr:city": "加東市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加東市下鴨川西山602-140",
+        "addr:neighbourhood": "下鴨川西山",
+        "addr:postcode": "673-1400",
+        "addr:province": "兵庫県",
+        "name": "ちいさな森キャンプ村",
+        "phone": "0795-45-0602",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438388,
+      "tags": {
+        "addr:block_number": "1310-1",
+        "addr:city": "加東市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加東市平木1310-1",
+        "addr:neighbourhood": "平木",
+        "addr:postcode": "673-1402",
+        "addr:province": "兵庫県",
+        "name": "ロイヤル村オートキャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287438389,
+      "tags": {
+        "addr:block_number": "288",
+        "addr:city": "三田市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三田市波豆川288",
+        "addr:neighbourhood": "波豆川",
+        "addr:postcode": "669-1411",
+        "addr:province": "兵庫県",
+        "name": "三田アスレチック",
+        "phone": "079-569-0024",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287440922,
+      "tags": {
+        "addr:block_number": "2557-1",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡市川町下牛尾2557-1",
+        "addr:neighbourhood": "下牛尾",
+        "addr:postcode": "679-2302",
+        "addr:province": "兵庫県",
+        "addr:suburb": "市川町",
+        "name": "リフレッシュパーク市川",
+        "phone": "0790-27-0313",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287440925,
+      "tags": {
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市夢前町山ノ内佐中",
+        "addr:neighbourhood": "夢前町山ノ内佐中",
+        "addr:postcode": "671-2101",
+        "addr:province": "兵庫県",
+        "name": "佐中ふれあいの里",
+        "phone": "079-338-0811",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449381,
+      "tags": {
+        "addr:block_number": "605",
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市郷瀬町605",
+        "addr:neighbourhood": "郷瀬町",
+        "addr:postcode": "677-8511",
+        "addr:province": "兵庫県",
+        "name": "木谷山キャンプ場",
+        "phone": "0795-22-3111",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449384,
+      "tags": {
+        "addr:block_number": "1353",
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市鹿野町1353",
+        "addr:neighbourhood": "鹿野町",
+        "addr:province": "兵庫県",
+        "name": "県民広場キャンプ場",
+        "phone": "0855-87-0224",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449502,
+      "tags": {
+        "addr:block_number": "817-41",
+        "addr:city": "多可郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県多可郡多可町中区牧野817-41",
+        "addr:neighbourhood": "中区牧野",
+        "addr:postcode": "679-1103",
+        "addr:province": "兵庫県",
+        "addr:suburb": "多可町",
+        "name": "chattanaの森",
+        "phone": "0795-32-4111",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449505,
+      "tags": {
+        "addr:block_number": "302",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市小野奥谷302",
+        "addr:neighbourhood": "小野奥谷",
+        "addr:postcode": "669-2522",
+        "addr:province": "兵庫県",
+        "name": "クラブ篠山",
+        "tourism": "camp_site",
+        "website": "https://clubsasayama-campfield.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449506,
+      "tags": {
+        "addr:block_number": "1019-13",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡神河町根宇野1019-13",
+        "addr:neighbourhood": "根宇野",
+        "addr:postcode": "679-2411",
+        "addr:province": "兵庫県",
+        "addr:suburb": "神河町",
+        "name": "グリーンエコー笠形",
+        "phone": "0790-32-1307",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449514,
+      "tags": {
+        "addr:block_number": "66-3",
+        "addr:city": "宍粟市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県宍粟市山崎町与位66-3",
+        "addr:neighbourhood": "山崎町与位",
+        "addr:postcode": "671-2512",
+        "addr:province": "兵庫県",
+        "name": "ウッドデザインパーク与位",
+        "phone": "0790-64-0170",
+        "tourism": "camp_site",
+        "website": "https://wood-designpark.jp/yoi/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449625,
+      "tags": {
+        "addr:block_number": "1003-1",
+        "addr:city": "加古川市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加古川市平荘町中山1003-1",
+        "addr:neighbourhood": "平荘町中山",
+        "addr:province": "兵庫県",
+        "name": "権現総合公園キャンプ場",
+        "phone": "079-428-3566",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449643,
+      "tags": {
+        "addr:block_number": "1761-1",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市北区淡河町北僧尾1761-1",
+        "addr:neighbourhood": "淡河町北僧尾",
+        "addr:postcode": "651-1601",
+        "addr:province": "兵庫県",
+        "addr:suburb": "北区",
+        "name": "madobe outdoor",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449647,
+      "tags": {
+        "addr:block_number": "921",
+        "addr:city": "揖保郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県揖保郡太子町原白毛山921",
+        "addr:neighbourhood": "原白毛山",
+        "addr:postcode": "671-1502",
+        "addr:province": "兵庫県",
+        "addr:suburb": "太子町",
+        "name": "YMCA 太子遊びと冒険の森 ASOBO（姫路YMCA太子教育キャンプ場）",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449651,
+      "tags": {
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市北区淡河町野瀬",
+        "addr:neighbourhood": "淡河町野瀬",
+        "addr:province": "兵庫県",
+        "addr:suburb": "北区",
+        "name": "神戸青少年公園デイキャンプ場",
+        "phone": "078-583-4820",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449653,
+      "tags": {
+        "addr:block_number": "894-60",
+        "addr:city": "三木市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三木市細川町垂穂894-60",
+        "addr:neighbourhood": "細川町垂穂",
+        "addr:postcode": "673-0703",
+        "addr:province": "兵庫県",
+        "name": "NESTA NATURE CAMP FIELD",
+        "phone": "0794-83-5211",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449657,
+      "tags": {
+        "addr:block_number": "845-16",
+        "addr:city": "加古川市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加古川市上荘町見土呂845-16",
+        "addr:neighbourhood": "上荘町見土呂",
+        "addr:postcode": "675-1214",
+        "addr:province": "兵庫県",
+        "name": "みとろの丘FEELD",
+        "phone": "079-428-1113",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287449659,
+      "tags": {
+        "addr:block_number": "301",
+        "addr:city": "高砂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県高砂市阿弥陀町地徳301",
+        "addr:neighbourhood": "阿弥陀町地徳",
+        "addr:postcode": "676-0828",
+        "addr:province": "兵庫県",
+        "name": "市ノ池公園キャンプ場",
+        "phone": "079-447-3754",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287456967,
+      "tags": {
+        "addr:block_number": "4251-6",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡福崎町八千種4251-6",
+        "addr:neighbourhood": "八千種",
+        "addr:postcode": "679-2202",
+        "addr:province": "兵庫県",
+        "addr:suburb": "福崎町",
+        "name": "春日山キャンプ場",
+        "phone": "0790-22-5805",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287456969,
+      "tags": {
+        "addr:block_number": "381",
+        "addr:city": "川西市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県川西市黒川落合381番地",
+        "addr:neighbourhood": "黒川落合",
+        "addr:postcode": "666-0101",
+        "addr:province": "兵庫県",
+        "name": "知明湖キャンプ場",
+        "phone": "072-759-7271",
+        "tourism": "camp_site",
+        "website": "https://chimyoko-camp.jimdo.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287456975,
+      "tags": {
+        "addr:block_number": "6-1",
+        "addr:city": "川辺郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県川辺郡猪名川町万善東山6-1",
+        "addr:neighbourhood": "万善東山",
+        "addr:postcode": "666-0200",
+        "addr:province": "兵庫県",
+        "addr:suburb": "猪名川町",
+        "name": "尼崎市立青少年いこいの家",
+        "phone": "072-768-0614",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287461402,
+      "tags": {
+        "addr:block_number": "1479-1",
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市中畑町東山1479-1",
+        "addr:neighbourhood": "中畑町東山",
+        "addr:postcode": "677-0032",
+        "addr:province": "兵庫県",
+        "name": "西脇市立中畑特用林産管理組合 林間ファミリー園",
+        "phone": "0795-23-8376",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287461405,
+      "tags": {
+        "addr:block_number": "1631",
+        "addr:city": "神崎郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神崎郡市川町下牛尾1631",
+        "addr:neighbourhood": "下牛尾",
+        "addr:postcode": "679-2302",
+        "addr:province": "兵庫県",
+        "addr:suburb": "市川町",
+        "name": "市川ハウス",
+        "phone": "090-9252-7496",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287461413,
+      "tags": {
+        "addr:block_number": "1434-8",
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市上比延町1434-8",
+        "addr:neighbourhood": "上比延町",
+        "addr:postcode": "677-0039",
+        "addr:province": "兵庫県",
+        "name": "西脇市立青年の家",
+        "phone": "0795-22-3703",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287461416,
+      "tags": {
+        "addr:block_number": "333-11",
+        "addr:city": "西脇市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西脇市上比延町333-11",
+        "addr:neighbourhood": "上比延町",
+        "addr:postcode": "677-0039",
+        "addr:province": "兵庫県",
+        "name": "日本のへそキャンプ場",
+        "phone": "0795-23-7111",
+        "tourism": "camp_site",
+        "website": "https://www.hesocamp.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287465788,
+      "tags": {
+        "addr:block_number": "67",
+        "addr:city": "西宮市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西宮市甲山町67",
+        "addr:neighbourhood": "甲山町",
+        "addr:postcode": "662-0001",
+        "addr:province": "兵庫県",
+        "name": "西宮市甲山キャンプ場",
+        "phone": "0798-72-0037",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287465789,
+      "tags": {
+        "addr:block_number": "37-23",
+        "addr:city": "芦屋市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県芦屋市奥池南町37-23",
+        "addr:neighbourhood": "奥池南町",
+        "addr:postcode": "659-0004",
+        "addr:province": "兵庫県",
+        "name": "奥池あそびの広場",
+        "phone": "0797-38-0801",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287465791,
+      "tags": {
+        "addr:block_number": "3626-2",
+        "addr:city": "赤穂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂市塩屋3626-2",
+        "addr:neighbourhood": "塩屋",
+        "addr:province": "兵庫県",
+        "name": "ファクトリーファーム赤穂",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287465793,
+      "tags": {
+        "addr:block_number": "1718",
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市的形町的形1718",
+        "addr:neighbourhood": "的形町的形",
+        "addr:postcode": "671-0111",
+        "addr:province": "兵庫県",
+        "name": "的形潮干狩場・海水浴場",
+        "phone": "079-254-1964",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287465795,
+      "tags": {
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市北区山田町原野字大塚山",
+        "addr:neighbourhood": "山田町原野字大塚山",
+        "addr:postcode": "651-1252",
+        "addr:province": "兵庫県",
+        "addr:suburb": "北区",
+        "name": "KOBE川の音ベース",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287465797,
+      "tags": {
+        "addr:block_number": "4512-98",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市灘区六甲山町北六甲4512-98",
+        "addr:neighbourhood": "六甲山町北六甲",
+        "addr:postcode": "657-0101",
+        "addr:province": "兵庫県",
+        "addr:suburb": "灘区",
+        "name": "六甲山アドベンチャースクール",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287467377,
+      "tags": {
+        "addr:block_number": "6-1",
+        "addr:city": "川西市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県川西市西畦野餓景6-1",
+        "addr:neighbourhood": "西畦野餓景",
+        "addr:postcode": "666-0155",
+        "addr:province": "兵庫県",
+        "name": "能勢川バイブルキャンプ",
+        "phone": "072-794-0120",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287467381,
+      "tags": {
+        "addr:block_number": "1365-1",
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市砥堀1365-1",
+        "addr:neighbourhood": "砥堀",
+        "addr:postcode": "670-0802",
+        "addr:province": "兵庫県",
+        "name": "そうめん滝キャンプ場",
+        "phone": "079-264-4373",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287467385,
+      "tags": {
+        "addr:block_number": "780",
+        "addr:city": "三木市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県三木市口吉川町里脇780",
+        "addr:neighbourhood": "口吉川町里脇",
+        "addr:postcode": "673-0751",
+        "addr:province": "兵庫県",
+        "name": "イオン三木里脇もぎたてキャンプ場",
+        "tourism": "camp_site",
+        "website": "https://aeonagricreate.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287475548,
+      "tags": {
+        "addr:city": "加西市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加西市東剣坂町",
+        "addr:neighbourhood": "東剣坂町",
+        "addr:province": "兵庫県",
+        "name": "古法華自然公園",
+        "phone": "079-289-1320",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287475551,
+      "tags": {
+        "addr:block_number": "3928",
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市豊富町豊富3928",
+        "addr:neighbourhood": "豊富町豊富",
+        "addr:postcode": "679-2123",
+        "addr:province": "兵庫県",
+        "name": "太尾キャンプ場",
+        "phone": "079-264-1295",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287475556,
+      "tags": {
+        "addr:block_number": "724-13",
+        "addr:city": "加東市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加東市新定724-13",
+        "addr:neighbourhood": "新定",
+        "addr:postcode": "673-1324",
+        "addr:province": "兵庫県",
+        "name": "健康の森",
+        "phone": "0795-46-0553",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287475558,
+      "tags": {
+        "addr:block_number": "321",
+        "addr:city": "たつの市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県たつの市神岡町東觜崎321",
+        "addr:neighbourhood": "神岡町東觜崎",
+        "addr:postcode": "679-4109",
+        "addr:province": "兵庫県",
+        "name": "JUNGRING",
+        "tourism": "camp_site",
+        "website": "https://www.jungring.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287475560,
+      "tags": {
+        "addr:city": "たつの市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県たつの市揖西町中垣内",
+        "addr:neighbourhood": "揖西町中垣内",
+        "addr:province": "兵庫県",
+        "name": "中垣内教育キャンプ場",
+        "phone": "0791-72-6494",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287476345,
+      "tags": {
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市家島町西島",
+        "addr:neighbourhood": "家島町西島",
+        "addr:province": "兵庫県",
+        "name": "シーサイドキャンプ西島",
+        "phone": "090-3283-1872",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287476476,
+      "tags": {
+        "addr:block_number": "715-5",
+        "addr:city": "加古川市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加古川市東神吉町天下原715-5",
+        "addr:neighbourhood": "東神吉町天下原",
+        "addr:postcode": "675-0058",
+        "addr:province": "兵庫県",
+        "name": "加古川市立少年自然の家",
+        "phone": "079-432-5177",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287476492,
+      "tags": {
+        "addr:block_number": "1-119",
+        "addr:city": "西宮市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県西宮市越水社家郷山1-119",
+        "addr:neighbourhood": "越水社家郷山",
+        "addr:postcode": "662-0006",
+        "addr:province": "兵庫県",
+        "name": "社家郷山キャンプ場",
+        "phone": "0798-72-2682",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287478414,
+      "tags": {
+        "addr:block_number": "1287-32",
+        "addr:city": "加古郡",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加古郡稲美町国安1287-32",
+        "addr:neighbourhood": "国安",
+        "addr:postcode": "675-1114",
+        "addr:province": "兵庫県",
+        "addr:suburb": "稲美町",
+        "name": "稲美町野外活動センター",
+        "phone": "079-492-2340",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287478418,
+      "tags": {
+        "addr:block_number": "2296-3",
+        "addr:city": "赤穂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂市尾崎2296-3",
+        "addr:neighbourhood": "尾崎",
+        "addr:postcode": "678-0221",
+        "addr:province": "兵庫県",
+        "name": "丸山県民サンビーチ",
+        "phone": "0791-43-6839",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287478419,
+      "tags": {
+        "addr:block_number": "1-1",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市灘区六甲山町中一里山1-1",
+        "addr:neighbourhood": "六甲山町中一里山",
+        "addr:postcode": "657-0101",
+        "addr:province": "兵庫県",
+        "addr:suburb": "灘区",
+        "name": "そうぞうのすみか／神戸市立自然の家",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287478427,
+      "tags": {
+        "addr:block_number": "708-1",
+        "addr:city": "赤穂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂市御崎708-1",
+        "addr:neighbourhood": "御崎",
+        "addr:postcode": "678-0215",
+        "addr:province": "兵庫県",
+        "name": "赤穂市立野外活動センター",
+        "phone": "0791-45-1067",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287478428,
+      "tags": {
+        "addr:block_number": "708-1",
+        "addr:city": "赤穂市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県赤穂市御崎708-1",
+        "addr:neighbourhood": "御崎",
+        "addr:postcode": "678-0215",
+        "addr:province": "兵庫県",
+        "glamping": "yes",
+        "name": "赤穂御崎グラン・ドームテント",
+        "phone": "0791-45-1067",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287478998,
+      "tags": {
+        "addr:block_number": "2302-2",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市大谷2302-2",
+        "addr:neighbourhood": "大谷",
+        "addr:postcode": "656-2224",
+        "addr:province": "兵庫県",
+        "name": "竹林の郷 ほっこりBASE",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287481858,
+      "tags": {
+        "addr:block_number": "2425-2",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市楠本2425-2",
+        "addr:neighbourhood": "楠本",
+        "addr:postcode": "656-2301",
+        "addr:province": "兵庫県",
+        "name": "GRAND CHARIOT-北斗七星135°-",
+        "phone": "0799-64-7090",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287482901,
+      "tags": {
+        "addr:block_number": "9-90",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市西区神出町小束野9-90",
+        "addr:neighbourhood": "神出町小束野",
+        "addr:postcode": "651-2304",
+        "addr:province": "兵庫県",
+        "addr:suburb": "西区",
+        "name": "1 KOBE Camp Base",
+        "phone": "078-965-3599",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287484496,
+      "tags": {
+        "addr:block_number": "115-1",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市興隆寺115-1",
+        "addr:neighbourhood": "興隆寺",
+        "addr:postcode": "656-2211",
+        "addr:province": "兵庫県",
+        "name": "興隆寺ヴィレッジ Camping Field",
+        "phone": "0799-70-7961",
+        "tourism": "camp_site",
+        "website": "https://koryujivillage.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287484498,
+      "tags": {
+        "addr:block_number": "4112",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市尾崎4112番地",
+        "addr:neighbourhood": "尾崎",
+        "addr:postcode": "656-1501",
+        "addr:province": "兵庫県",
+        "name": "aoieプライベートキャンプ",
+        "phone": "0799-70-7219",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287485112,
+      "tags": {
+        "addr:block_number": "519",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市五色町鮎原吉田519",
+        "addr:neighbourhood": "五色町鮎原吉田",
+        "addr:postcode": "656-1312",
+        "addr:province": "兵庫県",
+        "name": "淡路島PALM HOUSE",
+        "phone": "080-1440-3313",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287485145,
+      "tags": {
+        "addr:block_number": "1635-17",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市阿那賀1635-17",
+        "addr:neighbourhood": "阿那賀",
+        "addr:postcode": "656-0661",
+        "addr:province": "兵庫県",
+        "name": "南あわじ夕日の丘丸山キャンプ場",
+        "tourism": "camp_site",
+        "website": "https://khills-camp.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287485149,
+      "tags": {
+        "addr:block_number": "1187-1",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市伊加利1187-1",
+        "addr:neighbourhood": "伊加利",
+        "addr:postcode": "656-0651",
+        "addr:province": "兵庫県",
+        "name": "ワンともキャンプ場",
+        "tourism": "camp_site",
+        "website": "https://wantomo-camp.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287487110,
+      "tags": {
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市西区井吹台東町7丁目",
+        "addr:neighbourhood": "井吹台東町7丁目",
+        "addr:postcode": "651-2242",
+        "addr:province": "兵庫県",
+        "addr:suburb": "西区",
+        "name": "西神南テニスガーデン",
+        "phone": "078-997-0293",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287489758,
+      "tags": {
+        "addr:block_number": "1430",
+        "addr:city": "淡路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県淡路市王子1430",
+        "addr:neighbourhood": "王子",
+        "addr:postcode": "656-2162",
+        "addr:province": "兵庫県",
+        "name": "菜音キャンプ",
+        "tourism": "camp_site",
+        "website": "https://zionfarm.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287489771,
+      "tags": {
+        "addr:block_number": "1087",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市五色町都志1087",
+        "addr:neighbourhood": "五色町都志",
+        "addr:postcode": "656-1301",
+        "addr:province": "兵庫県",
+        "name": "ウェルネスパーク五色オートキャンプ場",
+        "phone": "0799-33-1600",
+        "tourism": "camp_site",
+        "website": "https://www.takataya.jp/autocamp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287489816,
+      "tags": {
+        "addr:block_number": "688",
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市家島町坊勢東尾友688",
+        "addr:neighbourhood": "家島町坊勢東尾友",
+        "addr:province": "兵庫県",
+        "name": "兵庫県立いえしま自然体験センター",
+        "phone": "079-327-1508",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287495445,
+      "tags": {
+        "addr:block_number": "782-24",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市阿那賀782-24",
+        "addr:neighbourhood": "阿那賀",
+        "addr:postcode": "656-0661",
+        "addr:province": "兵庫県",
+        "name": "伊毘うずしお村オートキャンプ場",
+        "phone": "0799-37-9040",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287496176,
+      "tags": {
+        "addr:block_number": "609-1",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市中川原町厚浜609-1",
+        "addr:neighbourhood": "中川原町厚浜",
+        "addr:postcode": "656-0001",
+        "addr:province": "兵庫県",
+        "name": "Trek Garden",
+        "phone": "090-5469-2516",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287498866,
+      "tags": {
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市松帆慶野松原",
+        "addr:neighbourhood": "松帆慶野松原",
+        "addr:postcode": "656-0304",
+        "addr:province": "兵庫県",
+        "name": "慶野松原一般キャンプ場",
+        "phone": "0799-36-5959",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287498871,
+      "tags": {
+        "addr:block_number": "577-78",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市松帆古津路577-78",
+        "addr:neighbourhood": "松帆古津路",
+        "addr:postcode": "656-0304",
+        "addr:province": "兵庫県",
+        "name": "けいのSUP＆Camp Base",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287498873,
+      "tags": {
+        "addr:block_number": "577-116",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市松帆古津路577-116",
+        "addr:neighbourhood": "松帆古津路",
+        "addr:postcode": "656-0304",
+        "addr:province": "兵庫県",
+        "name": "ひらめキャンプ場",
+        "phone": "070-4475-6804",
+        "tourism": "camp_site",
+        "website": "https://www.hiramecamp.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287509766,
+      "tags": {
+        "addr:block_number": "113-1",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市阿万吹上町吹上赤松113-1",
+        "addr:neighbourhood": "阿万吹上町吹上赤松",
+        "addr:postcode": "656-0542",
+        "addr:province": "兵庫県",
+        "name": "吹上浜キャンプ場",
+        "phone": "0799-55-0948",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287509778,
+      "tags": {
+        "addr:block_number": "313",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市灘313",
+        "addr:neighbourhood": "灘",
+        "addr:postcode": "656-0551",
+        "addr:province": "兵庫県",
+        "name": "アグリミュージアムNADA",
+        "phone": "070-9012-1349",
+        "tourism": "camp_site",
+        "website": "https://am-nada.lovepop.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287525665,
+      "tags": {
+        "addr:block_number": "2581",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市由良町由良2581",
+        "addr:neighbourhood": "由良町由良",
+        "addr:postcode": "656-2543",
+        "addr:province": "兵庫県",
+        "name": "COCCIA BASE",
+        "tourism": "camp_site",
+        "website": "https://www.awajisima.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287525671,
+      "tags": {
+        "addr:block_number": "1109",
+        "addr:city": "南あわじ市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県南あわじ市阿那賀1109",
+        "addr:neighbourhood": "阿那賀",
+        "addr:postcode": "656-0661",
+        "addr:province": "兵庫県",
+        "name": "NaGi CAMP",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287658026,
+      "tags": {
+        "addr:block_number": "1049",
+        "addr:city": "丹波篠山市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県丹波篠山市今田町本荘1049",
+        "addr:neighbourhood": "今田町本荘",
+        "addr:postcode": "669-2163",
+        "addr:province": "兵庫",
+        "name": "BLACK BEANS",
+        "phone": "079-550-9129",
+        "tourism": "camp_site",
+        "website": "https://black-beans1049.jp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287677501,
+      "tags": {
+        "addr:block_number": "7-29",
+        "addr:city": "姫路市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県姫路市青山南4丁目7-29",
+        "addr:neighbourhood": "青山南4丁目",
+        "addr:postcode": "671-2223",
+        "addr:province": "兵庫",
+        "name": "AOYAMA BBQ FIELD",
+        "phone": "079-276-1181",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14287677507,
+      "tags": {
+        "addr:block_number": "59",
+        "addr:city": "洲本市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県洲本市千草丙59",
+        "addr:neighbourhood": "千草丙",
+        "addr:postcode": "656-0031",
+        "addr:province": "兵庫",
+        "name": "猪鼻谷フォレストパークメモリアル２３",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14289699453,
+      "tags": {
+        "addr:block_number": "317-228",
+        "addr:city": "加東市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県加東市廻渕317-228",
+        "addr:neighbourhood": "廻渕",
+        "addr:postcode": "673-1412",
+        "addr:province": "兵庫県",
+        "name": "ログキャビン フリーライド",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14289699454,
+      "tags": {
+        "addr:block_number": "4-1",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市北区山田町下谷上中一里山4-1",
+        "addr:neighbourhood": "山田町下谷上中一里山",
+        "addr:postcode": "658-0000",
+        "addr:province": "兵庫県",
+        "addr:suburb": "北区",
+        "name": "神戸市立洞川教育キャンプ場",
+        "phone": "078-232-1509",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14289699455,
+      "tags": {
+        "addr:block_number": "14-1",
+        "addr:city": "神戸市",
+        "addr:country": "JP",
+        "addr:full": "兵庫県神戸市北区山田町下谷上中一里山14-1",
+        "addr:neighbourhood": "山田町下谷上中一里山",
+        "addr:province": "兵庫県",
+        "addr:suburb": "北区",
+        "name": "しあわせの村オートキャンプ場",
+        "phone": "078-743-8370",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 216781738,
+      "tags": {
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 431204419,
+      "tags": {
+        "name": "オートキャンプ場",
+        "name:en": "Auto-Campground",
+        "name:ko": "오토 캠핑장",
+        "name:zh-Hans-CN": "房车露营地",
+        "name:zh-Hant-TW": "房車露營地",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 431324774,
+      "tags": {
+        "name": "テントキャンプ場",
+        "name:en": "Campground",
+        "name:ko": "텐트 캠핑장",
+        "name:zh-Hans-CN": "帐篷露营地",
+        "name:zh-Hant-TW": "帳篷露營地",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 599217147,
+      "tags": {
+        "name": "大野アルプスランド　キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 631409277,
+      "tags": {
+        "name": "羅漢羅漢の里キャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1201219717,
+      "tags": {
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1223990981,
+      "tags": {
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1312228615,
+      "tags": {
+        "access": "customers",
+        "backcountry": "no",
+        "drinking_water": "yes",
+        "fee": "yes",
+        "name": "モビレージ東条湖",
+        "power_supply": "yes",
+        "reservation": "yes",
+        "shower": "yes",
+        "tents": "yes",
+        "toilets": "yes",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1355689234,
+      "tags": {
+        "name": "安室ダムキャンプ場",
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1356460631,
+      "tags": {
+        "tourism": "camp_site"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1487072200,
+      "tags": {
+        "camp_site": "serviced",
+        "name": "淡路じゃのひれ オートキャンプ場",
+        "phone": "0799521487",
+        "tents": "yes",
+        "tourism": "camp_site",
+        "website": "https://janohire.co.jp/"
+      }
+    }
+  ]
+}

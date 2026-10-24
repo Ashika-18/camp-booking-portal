@@ -1,0 +1,22 @@
+{
+    "name": "camp-booking-portal",
+    "version": "1.0.0",
+    "description": "初心者ファミリー向けキャンプ場予約サポート＆カタログポータル",
+    "main": "server.js",
+    "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+    },
+    "keywords": [
+    "camp",
+    "booking",
+    "express",
+    "rest-api"
+    ],
+    "author": "Camp Booking Portal Team",
+    "license": "ISC",
+    "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+    }
+    }

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "inq_1792824428532",
+    "createdAt": "2026-10-24T06:47:08.532Z",
+    "siteId": "site-power-a",
+    "siteName": "電源付きオートサイト A区画",
+    "customerName": "山田太郎",
+    "customerTel": "09012345678",
+    "customerEmail": "test@example.com",
+    "checkInDate": "2026-10-25",
+    "nights": 1,
+    "adults": 2,
+    "children": 0,
+    "carCount": 1,
+    "rentals": [],
+    "questions": "",
+    "channel": "email"
+  }
+]

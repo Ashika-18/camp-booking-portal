@@ -1,0 +1,12 @@
+# 依存関係ライブラリ（Git管理から除外）
+node_modules/
+
+# 環境変数・一時ファイル
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS固有のゴミファイル
+.DS_Store
+Thumbs.db
