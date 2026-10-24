@@ -50,10 +50,12 @@
     <!-- キャンプサイト一覧（カタログ） -->
     <section class="catalog-section">
       <div class="container">
-        <div class="catalog-header">
-          <h3 class="section-title">🏕️ キャンプサイト・宿泊施設一覧</h3>
-          <!-- 検索・絞り込みエリア -->
-        <div class="search-filter-box">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+            <h3 class="section-title" style="margin: 0;">🏕️ キャンプサイト・宿泊施設一覧</h3>
+            <div id="result-counter" style="font-size: 0.9rem; font-weight: bold; color: #475569; background: #e2e8f0; padding: 4px 12px; border-radius: 999px;">
+              該当件数: 0件
+            </div>
+          </div>
             <div class="search-inputs">
               <div class="search-field">
                 <label for="city-filter">エリア・市町村</label>

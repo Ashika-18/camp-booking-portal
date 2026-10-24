@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const cityFilter = document.getElementById('city-filter');
     const searchInput = document.getElementById('search-input');
+    const resultCounter = document.getElementById('result-counter');
   
     // 初期データ取得
     fetch('/api/sites')
@@ -55,6 +56,11 @@ document.addEventListener('DOMContentLoaded', function () {
         return matchType && matchCity && matchKeyword;
       });
   
+      // 件数バッジの更新
+      if (resultCounter) {
+        resultCounter.textContent = '該当件数: ' + filtered.length + '件 / 全' + allSites.length + '件';
+      }
+  
       renderSites(filtered);
     }
   
@@ -75,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   
-    // 施設カード描画（利用ルール・詳細枠を追加）
+    // 施設カード描画
     function renderSites(sites) {
       if (!sites || sites.length === 0) {
         sitesContainer.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #64748b; font-weight: bold;">該当するキャンプ場が見つかりませんでした。</div>';
@@ -110,7 +116,6 @@ document.addEventListener('DOMContentLoaded', function () {
         html += '    </ul>';
         html += '    <div class="site-facilities">' + facilitiesHtml + '</div>';
         
-        // 注意事項・予約ルール（notes）を明示表示
         if (site.notes) {
           html += '    <div class="site-notes-box" style="margin: 10px 0; padding: 8px 10px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 6px; font-size: 0.78rem; color: #92400e; line-height: 1.4;">';
           html += '      📌 <strong>利用・申請ルール:</strong> ' + escapeText(site.notes);
@@ -129,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
   
       sitesContainer.innerHTML = html;
   
-      // モーダルボタンのバインド
       document.querySelectorAll('.btn-open-modal').forEach(function (btn) {
         btn.addEventListener('click', function (e) {
           const siteId = e.currentTarget.dataset.id;
@@ -142,94 +146,91 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     // モーダル制御
-  const modal = document.getElementById('booking-modal') || document.getElementById('inquiry-modal');
-  const modalCloseBtn = document.getElementById('modal-close-btn');
-  const modalDetails = document.getElementById('modal-site-details');
-  const memoOutput = document.getElementById('memo-output');
-  const memoText = document.getElementById('memo-text');
-  const btnCreateMemo = document.getElementById('btn-create-memo');
-
-  let currentSelectedSite = null;
-
-  function openModal(site) {
-    if (!modal) return;
-    currentSelectedSite = site;
-
-    const siteIdInput = document.getElementById('inquiry-site-id');
-    const targetSiteName = document.getElementById('target-site-name');
-    if (siteIdInput) siteIdInput.value = site.id;
-    if (targetSiteName) targetSiteName.textContent = site.name;
-
-    // 施設詳細スペックのHTML組み立て
-    if (modalDetails) {
-      const priceStr = (site.price === 0) ? '完全無料（¥0）' : ('¥' + (site.price || 0).toLocaleString() + ' / 泊');
-      const facilitiesList = Array.isArray(site.facilities) ? site.facilities.join(' / ') : '標準設備';
-
-      let detailsHtml = '';
-      detailsHtml += '<div style="margin-bottom: 6px;"><strong>💴 利用料金:</strong> ' + escapeText(priceStr) + '</div>';
-      detailsHtml += '<div style="margin-bottom: 6px;"><strong>📐 サイト形態:</strong> ' + escapeText(site.size || '区画・フリー共用') + '（地面: ' + escapeText(site.groundType || '土') + '）</div>';
-      detailsHtml += '<div style="margin-bottom: 6px;"><strong>🔌 AC電源:</strong> ' + (site.powerAvailable ? 'あり (100V)' : 'なし') + '</div>';
-      detailsHtml += '<div style="margin-bottom: 6px;"><strong>🚻 主な設備:</strong> ' + escapeText(facilitiesList) + '</div>';
-      
-      if (site.notes) {
-        detailsHtml += '<div style="margin-top: 10px; padding: 8px 10px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 6px; color: #92400e;">';
-        detailsHtml += '  <strong>⚠️ 利用ルール・注意事項:</strong><br>' + escapeText(site.notes);
-        detailsHtml += '</div>';
-      }
-      
-      modalDetails.innerHTML = detailsHtml;
-    }
-
-    if (memoOutput) memoOutput.style.display = 'none';
-
-    modal.classList.remove('hidden');
-    modal.classList.add('active');
-  }
-
-  // メモ作成ボタンのクリックイベント
-  if (btnCreateMemo) {
-    btnCreateMemo.addEventListener('click', function () {
-      const name = (document.getElementById('inquiry-name').value || '未入力').trim();
-      const tel = (document.getElementById('inquiry-tel').value || '未入力').trim();
-      const date = document.getElementById('inquiry-date').value || '未定';
-      const people = document.getElementById('inquiry-people').value || '1';
-
-      if (!currentSelectedSite) return;
-
-      const noteText = [
-        '【キャンプ場 予約・問い合わせメモ】',
-        '■ 施設名: ' + currentSelectedSite.name,
-        '■ 代表者名: ' + name,
-        '■ 連絡先TEL: ' + tel,
-        '■ 利用希望日: ' + date,
-        '■ 利用人数: ' + people + '名',
-        '■ 確認事項/ルール: ' + (currentSelectedSite.notes || '特になし'),
-        '-----------------------------------',
-        'お電話または公式申請フォームにて上記内容をお伝えください。'
-      ].join('\n');
-
-      if (memoText && memoOutput) {
-        memoText.value = noteText;
-        memoOutput.style.display = 'block';
-      }
-    });
-  }
-
-  if (modalCloseBtn) {
-    modalCloseBtn.addEventListener('click', function () {
-      modal.classList.add('hidden');
-      modal.classList.remove('active');
-    });
-  }
-
-  window.addEventListener('click', function (e) {
-    if (e.target === modal) {
-      modal.classList.add('hidden');
-      modal.classList.remove('active');
-    }
-  });
+    const modal = document.getElementById('booking-modal') || document.getElementById('inquiry-modal');
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const modalDetails = document.getElementById('modal-site-details');
+    const memoOutput = document.getElementById('memo-output');
+    const memoText = document.getElementById('memo-text');
+    const btnCreateMemo = document.getElementById('btn-create-memo');
   
-    // 安全なHTMLエスケープ
+    let currentSelectedSite = null;
+  
+    function openModal(site) {
+      if (!modal) return;
+      currentSelectedSite = site;
+  
+      const siteIdInput = document.getElementById('inquiry-site-id');
+      const targetSiteName = document.getElementById('target-site-name');
+      if (siteIdInput) siteIdInput.value = site.id;
+      if (targetSiteName) targetSiteName.textContent = site.name;
+  
+      if (modalDetails) {
+        const priceStr = (site.price === 0) ? '完全無料（¥0）' : ('¥' + (site.price || 0).toLocaleString() + ' / 泊');
+        const facilitiesList = Array.isArray(site.facilities) ? site.facilities.join(' / ') : '標準設備';
+  
+        let detailsHtml = '';
+        detailsHtml += '<div style="margin-bottom: 6px;"><strong>💴 利用料金:</strong> ' + escapeText(priceStr) + '</div>';
+        detailsHtml += '<div style="margin-bottom: 6px;"><strong>📐 サイト形態:</strong> ' + escapeText(site.size || '区画・フリー共用') + '（地面: ' + escapeText(site.groundType || '土') + '）</div>';
+        detailsHtml += '<div style="margin-bottom: 6px;"><strong>🔌 AC電源:</strong> ' + (site.powerAvailable ? 'あり (100V)' : 'なし') + '</div>';
+        detailsHtml += '<div style="margin-bottom: 6px;"><strong>🚻 主な設備:</strong> ' + escapeText(facilitiesList) + '</div>';
+        
+        if (site.notes) {
+          detailsHtml += '<div style="margin-top: 10px; padding: 8px 10px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 6px; color: #92400e;">';
+          detailsHtml += '  <strong>⚠️ 利用ルール・注意事項:</strong><br>' + escapeText(site.notes);
+          detailsHtml += '</div>';
+        }
+        
+        modalDetails.innerHTML = detailsHtml;
+      }
+  
+      if (memoOutput) memoOutput.style.display = 'none';
+  
+      modal.classList.remove('hidden');
+      modal.classList.add('active');
+    }
+  
+    if (btnCreateMemo) {
+      btnCreateMemo.addEventListener('click', function () {
+        const name = (document.getElementById('inquiry-name').value || '未入力').trim();
+        const tel = (document.getElementById('inquiry-tel').value || '未入力').trim();
+        const date = document.getElementById('inquiry-date').value || '未定';
+        const people = document.getElementById('inquiry-people').value || '1';
+  
+        if (!currentSelectedSite) return;
+  
+        const noteText = [
+          '【キャンプ場 予約・問い合わせメモ】',
+          '■ 施設名: ' + currentSelectedSite.name,
+          '■ 代表者名: ' + name,
+          '■ 連絡先TEL: ' + tel,
+          '■ 利用希望日: ' + date,
+          '■ 利用人数: ' + people + '名',
+          '■ 確認事項/ルール: ' + (currentSelectedSite.notes || '特になし'),
+          '-----------------------------------',
+          'お電話または公式申請フォームにて上記内容をお伝えください。'
+        ].join('\n');
+  
+        if (memoText && memoOutput) {
+          memoText.value = noteText;
+          memoOutput.style.display = 'block';
+        }
+      });
+    }
+  
+    if (modalCloseBtn) {
+      modalCloseBtn.addEventListener('click', function () {
+        modal.classList.add('hidden');
+        modal.classList.remove('active');
+      });
+    }
+  
+    window.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('active');
+      }
+    });
+  
     function escapeText(str) {
       if (!str) return '';
       const div = document.createElement('div');
