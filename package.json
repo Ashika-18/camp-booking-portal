@@ -4,7 +4,10 @@
     "description": "初心者ファミリー向けキャンプ場予約サポート＆カタログポータル",
     "main": "server.js",
     "scripts": {
+    "build": "node scripts/prepare-static.js",
+    "prestart": "node scripts/prepare-static.js",
     "start": "node server.js",
+    "predev": "node scripts/prepare-static.js",
     "dev": "node --watch server.js"
     },
     "keywords": [

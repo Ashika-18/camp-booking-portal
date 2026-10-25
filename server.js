@@ -2,9 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const fs = require('fs').promises;
+const { SECURITY_HEADERS, withAllowedImage } = require('./scripts/security-policy');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.disable('x-powered-by');
 
 // キャンプ場公式窓口情報
 const CAMP_INFO = {
@@ -21,6 +24,12 @@ const INQUIRIES_FILE = path.join(DATA_DIR, 'inquiries.json');
 const PUBLIC_DIR = path.join(__dirname, 'public');
 
 // ミドルウェア設定
+app.use((req, res, next) => {
+  for (const [name, value] of SECURITY_HEADERS) {
+    res.setHeader(name, value);
+  }
+  next();
+});
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -143,7 +152,7 @@ async function writeJsonFile(filePath, data) {
  */
 app.get('/api/sites', async (req, res) => {
   try {
-    const sites = await readJsonFile(SITES_FILE);
+    const sites = (await readJsonFile(SITES_FILE)).map(withAllowedImage);
     const { type } = req.query;
 
     if (type && typeof type === 'string') {
@@ -178,7 +187,7 @@ app.get('/api/sites/:id', async (req, res) => {
   try {
     const { id } = req.params;
     const sites = await readJsonFile(SITES_FILE);
-    const site = sites.find((s) => s.id === id);
+    const site = withAllowedImage(sites.find((s) => s.id === id));
 
     if (!site) {
       return res.status(404).json({

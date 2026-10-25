@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const FAVORITE_STORAGE_KEY = 'camp-booking-favorites';
+    const MAX_KEYWORD_LENGTH = 50;
+    const ALLOWED_IMAGE_HOSTS = new Set(['images.unsplash.com']);
     let allSites = [];
     const activeFilters = new Set();
     const favoriteIds = loadFavoriteIds();
@@ -27,13 +29,25 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedSite = null;
   
     // 1. データ取得（配列直接・オブジェクト内包のどちらの形式でも安全に展開）
+    async function loadSitesPayload() {
+      const urls = ['/api/sites', '/data/sites.json'];
+      for (const url of urls) {
+        try {
+          const res = await fetch(url);
+          if (!res.ok) continue;
+          const type = res.headers.get('content-type') || '';
+          if (!type.includes('json')) continue;
+          return await res.json();
+        } catch (err) {
+          // Express が無い Static Site では次の経路を使う
+        }
+      }
+      throw new Error('施設データを取得できませんでした。');
+    }
+
     async function fetchSites() {
       try {
-        const res = await fetch('/api/sites');
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        const data = await res.json();
+        const data = await loadSitesPayload();
   
         let rawSites = [];
         if (Array.isArray(data)) {
@@ -50,15 +64,24 @@ document.addEventListener('DOMContentLoaded', () => {
         applyFilters();
       } catch (err) {
         console.error('Fetch error:', err);
-        sitesContainer.innerHTML = '<p style="color: #dc2626; text-align: center; padding: 24px;">データの読み込みに失敗しました。server.js が起動しているか確認してください。</p>';
+        sitesContainer.innerHTML = '<p style="color: #dc2626; text-align: center; padding: 24px;">施設データの読み込みに失敗しました。ページを再読み込みするか、配信ファイルを確認してください。</p>';
       }
     }
   
+    function escapeRegExp(value) {
+      return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function sanitizeKeyword(raw) {
+      return String(raw || '').trim().slice(0, MAX_KEYWORD_LENGTH);
+    }
+
     // 2. フィルタリングと描画
     function applyFilters() {
       const selectedCity = cityFilter.value.trim();
-      const keyword = searchInput.value.trim().toLowerCase();
-  
+      const keyword = sanitizeKeyword(searchInput.value).toLowerCase();
+      const keywordPattern = keyword ? new RegExp(escapeRegExp(keyword), 'i') : null;
+
       const filtered = allSites.filter(site => {
         const address = site.address || '';
         const name = site.name || '';
@@ -70,11 +93,11 @@ document.addEventListener('DOMContentLoaded', () => {
           const matcher = filterMatchers[type];
           if (matcher && !matcher(site)) return false;
         }
-        // キーワード検索
-        if (keyword) {
+        // キーワード検索（メタ文字はリテラルとして扱う）
+        if (keywordPattern) {
           const facilities = Array.isArray(site.facilities) ? site.facilities.join(' ') : '';
           const targetString = `${name} ${address} ${site.recommend || ''} ${site.specs || ''} ${facilities}`.toLowerCase();
-          if (!targetString.includes(keyword)) return false;
+          if (!keywordPattern.test(targetString)) return false;
         }
         if (favoriteOnly && !favoriteIds.has(String(site.id))) return false;
         return true;
@@ -95,8 +118,19 @@ document.addEventListener('DOMContentLoaded', () => {
     'https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=600&q=80'  // 芝生・ファミリー向けサイト
   ];
 
+  function isAllowedImageUrl(url) {
+    try {
+      const parsed = new URL(url, window.location.origin);
+      if (parsed.origin === window.location.origin) return true;
+      return parsed.protocol === 'https:' && ALLOWED_IMAGE_HOSTS.has(parsed.hostname);
+    } catch (err) {
+      return false;
+    }
+  }
+
   function getSiteImage(site, index) {
-    if (site.image && site.image.trim() !== '') return site.image;
+    const candidate = (site.image || '').trim();
+    if (candidate && isAllowedImageUrl(candidate)) return candidate;
     const name = site.name || '';
     if (name.includes('コテージ') || name.includes('村')) return campImages[5];
     if (name.includes('高原') || name.includes('山')) return campImages[3];
@@ -163,13 +197,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const imageUrl = getSiteImage(site, index);
       const badgesHtml = buildCardBadges(site);
       const isFav = favoriteIds.has(String(site.id));
+      const siteId = escapeHTML(site.id);
 
       return `
         <article class="site-card">
           <div class="site-card-image">
-            <img src="${imageUrl}" alt="${escapeHTML(site.name)}" loading="lazy">
+            <img src="${escapeHTML(imageUrl)}" alt="${escapeHTML(site.name)}" loading="lazy">
             ${badgesHtml}
-            <button type="button" class="btn-favorite${isFav ? ' is-active' : ''}" data-id="${site.id}" title="${isFav ? 'キープ解除' : 'キープする'}" aria-pressed="${isFav ? 'true' : 'false'}" aria-label="${isFav ? 'キープ解除' : 'キープする'}">${isFav ? '❤️' : '🤍'}</button>
+            <button type="button" class="btn-favorite${isFav ? ' is-active' : ''}" data-id="${siteId}" title="${isFav ? 'キープ解除' : 'キープする'}" aria-pressed="${isFav ? 'true' : 'false'}" aria-label="${isFav ? 'キープ解除' : 'キープする'}">${isFav ? '❤️' : '🤍'}</button>
           </div>
           <div class="site-card-body">
             <h4>${escapeHTML(site.name)}</h4>
@@ -186,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${site.rules ? `<div class="site-rules">⚠️ <strong>利用ルール:</strong> ${escapeHTML(site.rules)}</div>` : ''}
             <div class="site-card-footer">
               <div class="price">${escapeHTML(site.price || '料金要確認')}</div>
-              <button type="button" class="btn btn-open-modal" data-id="${site.id}">詳細・予約メモ</button>
+              <button type="button" class="btn btn-open-modal" data-id="${siteId}">詳細・予約メモ</button>
             </div>
           </div>
         </article>
@@ -212,7 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p style="margin: 0 0 6px 0;"><strong>所在地:</strong> ${escapeHTML(selectedSite.address || '要確認')}</p>
         <p style="margin: 0 0 6px 0;"><strong>利用料金:</strong> ${escapeHTML(selectedSite.price || '要確認')}</p>
         <p style="margin: 0 0 6px 0;"><strong>区画仕様:</strong> ${escapeHTML(selectedSite.specs || '要確認')}</p>
-        <p style="margin: 0 0 6px 0;"><strong>設備:</strong> ${(selectedSite.facilities || []).join('、') || '特になし'}</p>
+        <p style="margin: 0 0 6px 0;"><strong>設備:</strong> ${(selectedSite.facilities || []).map((facility) => escapeHTML(facility)).join('、') || '特になし'}</p>
         ${selectedSite.tel ? `<p style="margin: 0 0 6px 0;"><strong>電話番号:</strong> ${escapeHTML(selectedSite.tel)}</p>` : ''}
         ${selectedSite.rules ? `<div style="margin-top: 8px; padding: 8px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 4px; font-size: 0.82rem; color: #92400e;"><strong>⚠️ 注意事項:</strong> ${escapeHTML(selectedSite.rules)}</div>` : ''}
       `;
@@ -262,6 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
         siteUrl = urlMatch[0];
       }
     }
+    siteUrl = safeNavigationUrl(siteUrl);
 
     const memo = [
       `【キャンプ場 予約・問い合わせメモ】`,
@@ -409,7 +445,12 @@ bookingActions.appendChild(noTelNotice);
 
     // 6. 検索・フィルターイベント
     cityFilter.addEventListener('change', applyFilters);
-    searchInput.addEventListener('input', applyFilters);
+    searchInput.addEventListener('input', () => {
+      if (searchInput.value.length > MAX_KEYWORD_LENGTH) {
+        searchInput.value = searchInput.value.slice(0, MAX_KEYWORD_LENGTH);
+      }
+      applyFilters();
+    });
   
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
@@ -535,6 +576,17 @@ bookingActions.appendChild(noTelNotice);
         tel: site.tel || (telMatch ? telMatch[0] : ''),
         facilities: Array.isArray(site.facilities) ? site.facilities : []
       };
+    }
+
+    function safeNavigationUrl(url) {
+      if (typeof url !== 'string' || url.trim() === '') return '';
+      try {
+        const parsed = new URL(url.trim());
+        if (parsed.protocol === 'http:' || parsed.protocol === 'https:') return parsed.href;
+      } catch (err) {
+        return '';
+      }
+      return '';
     }
 
     function escapeHTML(str) {

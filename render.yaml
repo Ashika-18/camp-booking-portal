@@ -1,0 +1,27 @@
+# Render Static Site。next.config.js の headers() は使わない。
+# Dashboard で Blueprint を同期すると、以下の headers が全パスに付く。
+services:
+  - type: web
+    name: camp-booking-portal
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: ./public
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: "DENY"
+      - path: /*
+        name: X-Content-Type-Options
+        value: "nosniff"
+      - path: /*
+        name: Referrer-Policy
+        value: "strict-origin-when-cross-origin"
+      - path: /*
+        name: Permissions-Policy
+        value: "camera=(), microphone=(), geolocation=()"
+      - path: /*
+        name: Strict-Transport-Security
+        value: "max-age=31536000; includeSubDomains; preload"
+      - path: /*
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://images.unsplash.com https://*.unsplash.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"

@@ -3,6 +3,18 @@ node_modules/
 
 # 環境変数・一時ファイル
 .env
+.env.local
+.env.*
+!.env.example
+.env*.local
+
+# Next.js / 静的書き出しの生成物（このアプリは Next ではない）
+.next/
+out/
+
+# Render 向けにビルドが作る公開用カタログ
+public/data/sites.json
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
