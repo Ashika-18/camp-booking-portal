@@ -3,53 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ファミリーキャンプ場 公式ポータル | かんたん・安心予約サポート</title>
+  <title>あんしんキャンプ予約｜初心者・ファミリー向けキャンプ場検索</title>
+  <script>
+    window.tailwind = {
+      config: {
+        corePlugins: { preflight: false }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="logo">🌲 ファミリーキャンプ場 ポータル</h1>
-      <a href="tel:0120000000" class="btn btn-tel-header">📞 予約電話: 0120-000-000</a>
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <div class="container flex items-center py-4">
+      <p class="text-lg font-bold text-green-800 md:text-xl">🌲 あんしんキャンプ予約</p>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <h2>初心者ファミリーも安心。<br>失敗しないサイト選びと確実な予約。</h2>
-        <p>「何を持っていけばいい？」「区画はどう選ぶ？」そんな不安を解消します。</p>
+    <section class="relative isolate overflow-hidden text-white">
+      <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=2000&q=80" alt="夕方の湖畔でテントを張るキャンプ" class="absolute inset-0 -z-10 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-green-950/80 via-emerald-900/75 to-green-950/88"></div>
+      <div class="container relative py-16 text-center md:py-24">
+        <p class="mb-3 text-sm font-bold tracking-wide text-emerald-100">初めてのファミリーキャンプに</p>
+        <h1 class="text-3xl font-bold leading-tight md:text-5xl">初心者ファミリーも安心。<br>失敗しないサイト選びとカンタン予約。</h1>
+        <p class="mx-auto mt-5 max-w-3xl text-sm leading-relaxed text-white/90 md:text-base">「車は横付けできる？」「電源や水洗トイレはある？」<br class="hidden sm:inline">そんな不安をゼロにする、設備とルールがひと目でわかるキャンプ場検索。</p>
+        <ul class="mt-8 grid grid-cols-2 gap-3 text-left md:grid-cols-4">
+          <li class="rounded-2xl bg-white/95 p-4 text-slate-800 shadow-lg">
+            <p class="text-2xl" aria-hidden="true">🚗</p>
+            <p class="mt-2 text-sm font-bold text-green-800">車横付けOK</p>
+            <p class="mt-1 text-xs leading-relaxed text-slate-600">重い荷物運びゼロ</p>
+          </li>
+          <li class="rounded-2xl bg-white/95 p-4 text-slate-800 shadow-lg">
+            <p class="text-2xl" aria-hidden="true">🚻</p>
+            <p class="mt-2 text-sm font-bold text-green-800">清潔な水洗トイレ完備</p>
+            <p class="mt-1 text-xs leading-relaxed text-slate-600">子ども連れでも安心</p>
+          </li>
+          <li class="rounded-2xl bg-white/95 p-4 text-slate-800 shadow-lg">
+            <p class="text-2xl" aria-hidden="true">⛺</p>
+            <p class="mt-2 text-sm font-bold text-green-800">ゆったり10m×10m推奨</p>
+            <p class="mt-1 text-xs leading-relaxed text-slate-600">テントと車が並ぶ広さ</p>
+          </li>
+          <li class="rounded-2xl bg-white/95 p-4 text-slate-800 shadow-lg">
+            <p class="text-2xl" aria-hidden="true">📋</p>
+            <p class="mt-2 text-sm font-bold text-green-800">かんたん予約メモ付き</p>
+            <p class="mt-1 text-xs leading-relaxed text-slate-600">電話で伝える内容がそろう</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="guide-section">
+    <section class="bg-white py-20 md:py-24">
       <div class="container">
-        <h3 class="section-title">🔰 初めてでも安心！予約の3ステップ</h3>
-        <div class="steps-grid">
-          <div class="step-card">
-            <span class="step-num">Step 1</span>
-            <h4>スタイルで区画を選ぶ</h4>
-            <p>スマホ充電やホットプレートを使うなら「電源付き」、不安なら「コテージ」がおすすめ。</p>
-          </div>
-          <div class="step-card">
-            <span class="step-num">Step 2</span>
-            <h4>日程と人数を決める</h4>
-            <p>大人・子どもの人数、車の台数を事前に確認しておくと受付がスムーズです。</p>
-          </div>
-          <div class="step-card">
-            <span class="step-num">Step 3</span>
-            <h4>電話またはメールで完了</h4>
-            <p>サイト内の「予約メモ」を使うと、伝えるべき内容がまとまり迷わず連絡できます。</p>
-          </div>
-        </div>
+        <h2 class="text-balance text-center text-2xl font-bold leading-snug text-emerald-950 md:text-3xl">初めてでも迷わない！予約完了までの3ステップ</h2>
+        <ol class="mt-10 grid gap-4 md:grid-cols-3">
+          <li class="rounded-xl border border-stone-200/80 bg-white p-6 shadow-sm">
+            <span class="inline-flex rounded-full bg-emerald-700 px-3 py-1 text-xs font-bold text-white">STEP 1</span>
+            <h3 class="mt-3 text-lg font-bold text-stone-900">スタイルで区画を選ぶ</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">電源付き・車横付け・コテージから、家族の過ごし方に合わせて選べます。</p>
+          </li>
+          <li class="rounded-xl border border-stone-200/80 bg-white p-6 shadow-sm">
+            <span class="inline-flex rounded-full bg-emerald-700 px-3 py-1 text-xs font-bold text-white">STEP 2</span>
+            <h3 class="mt-3 text-lg font-bold text-stone-900">日程と人数を決める</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">大人・子どもの人数に加えて、車の台数も事前に確認しておくと受付がスムーズです。</p>
+          </li>
+          <li class="rounded-xl border border-stone-200/80 bg-white p-6 shadow-sm">
+            <span class="inline-flex rounded-full bg-emerald-700 px-3 py-1 text-xs font-bold text-white">STEP 3</span>
+            <h3 class="mt-3 text-lg font-bold text-stone-900">電話またはWEBで完了</h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">予約メモ機能を使えば、伝える内容がまとまり、迷わず連絡できます。</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section class="catalog-section">
+    <section class="relative isolate overflow-hidden py-20 md:py-24">
+      <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=2000&q=80" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-stone-900/55 via-stone-900/40 to-stone-900/60"></div>
+      <div class="container relative">
+        <h2 class="text-balance text-center text-2xl font-bold leading-snug text-white md:text-3xl">まずはここをチェック！初心者が絶対に失敗しない安心基準</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-center text-sm leading-relaxed text-stone-200">予約の前に、この4つがそろっているかを見れば、初めての家族キャンプでも段取りがぶれません。</p>
+        <ul class="mt-10 grid gap-4 sm:grid-cols-2">
+          <li>
+            <button type="button" class="criteria-card" data-criteria="auto_standard">
+              <p class="text-sm font-bold text-emerald-700">01 サイトの広さ</p>
+              <h3 class="mt-2 text-lg font-bold text-stone-900">10m×10m</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">2ルームテントと車を並べても余裕があるサイズの目安です。</p>
+              <span class="criteria-card-link">この条件で探す →</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="criteria-card" data-criteria="auto_power">
+              <p class="text-sm font-bold text-emerald-700">02 AC電源</p>
+              <h3 class="mt-2 text-lg font-bold text-stone-900">1000W目安</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">ホットカーペットや扇風機、スマホ充電に必要な電源の目安です。</p>
+              <span class="criteria-card-link">この条件で探す →</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="criteria-card" data-criteria="grass">
+              <p class="text-sm font-bold text-emerald-700">03 地面のタイプ</p>
+              <h3 class="mt-2 text-lg font-bold text-stone-900">芝生・平坦</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">子どもが転んでも安心で、ペグも打ちやすい地面です。</p>
+              <span class="criteria-card-link">この条件で探す →</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="criteria-card" data-criteria="flush_toilet">
+              <p class="text-sm font-bold text-emerald-700">04 水回り設備</p>
+              <h3 class="mt-2 text-lg font-bold text-stone-900">水洗トイレ・炊事場</h3>
+              <p class="mt-2 text-sm leading-relaxed text-stone-600">管理棟やトイレまで徒歩1〜2分なら、夜の移動も負担が少ないです。</p>
+              <span class="criteria-card-link">この条件で探す →</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="search-section" class="catalog-section bg-[#f4f6f4]">
       <div class="container">
         <div class="catalog-header">
           <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
-            <h3 class="section-title" style="margin: 0;">🏕️ キャンプサイト・宿泊施設一覧</h3>
+            <div>
+              <h2 class="section-title" style="margin: 0; text-align: left;">安心基準からキャンプ場を探す</h2>
+              <p class="catalog-lead">「水洗トイレ完備」「車横付け」「電源付き」など、初心者ファミリーが安心して過ごせる設備で絞り込めます。</p>
+            </div>
             <div id="result-counter" style="font-size: 0.9rem; font-weight: bold; color: #475569; background: #e2e8f0; padding: 4px 12px; border-radius: 999px;">
               該当件数: 0件
             </div>
@@ -85,15 +163,15 @@
 
           <div class="filter-group" role="group" aria-label="絞り込み条件">
             <button type="button" class="filter-btn active" data-type="all" aria-pressed="true">すべて</button>
-            <button type="button" class="filter-btn" data-type="auto_power" aria-pressed="false">電源付き</button>
-            <button type="button" class="filter-btn" data-type="auto_standard" aria-pressed="false">車乗り入れ可</button>
-            <button type="button" class="filter-btn" data-type="cottage" aria-pressed="false">コテージ</button>
+            <button type="button" class="filter-btn filter-btn-core" data-type="auto_standard" aria-pressed="false">車横付け（オート）</button>
+            <button type="button" class="filter-btn filter-btn-core" data-type="flush_toilet" aria-pressed="false">水洗トイレ完備</button>
+            <button type="button" class="filter-btn filter-btn-core" data-type="auto_power" aria-pressed="false">AC電源あり</button>
+            <button type="button" class="filter-btn filter-btn-core" data-type="grass" aria-pressed="false">芝生・平坦サイト</button>
+            <button type="button" class="filter-btn" data-type="cottage" aria-pressed="false">コテージ・宿泊棟</button>
+            <button type="button" class="filter-btn" data-type="onsen" aria-pressed="false">温泉近く・場内風呂</button>
             <button type="button" class="filter-btn" data-type="waterside" aria-pressed="false">川・水辺</button>
-            <button type="button" class="filter-btn" data-type="sea" aria-pressed="false">海・ビーチ</button>
-            <button type="button" class="filter-btn" data-type="highland" aria-pressed="false">高原</button>
-            <button type="button" class="filter-btn" data-type="onsen" aria-pressed="false">温泉</button>
+            <button type="button" class="filter-btn" data-type="highland" aria-pressed="false">高原・森林</button>
             <button type="button" class="filter-btn" data-type="budget" aria-pressed="false">無料・格安</button>
-            <button type="button" class="filter-btn" data-type="glamping" aria-pressed="false">グランピング</button>
           </div>
           <p class="filter-hint">複数選べます。選んだ条件をすべて満たす施設だけ表示します。</p>
         </div>
@@ -158,14 +236,25 @@
     </div>
   </div>
 
+  <div id="favorite-bar" class="favorite-bar hidden">
+    <div class="favorite-bar-content">
+      <span class="favorite-bar-icon">📌</span>
+      <span id="favorite-count-text">キープした施設: 0件</span>
+      <button type="button" id="btn-toggle-favorite-filter" class="btn-fav-filter" aria-pressed="false">キープ中のみ表示</button>
+      <button type="button" id="btn-clear-favorites" class="btn-fav-clear" title="すべて解除">✕</button>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 ファミリーキャンプ場 ポータル All Rights Reserved.</p>
+      <p>&copy; 2026 あんしんキャンプ予約 All Rights Reserved.</p>
       <p class="license-note" style="font-size: 0.75rem; color: #94a3b8; margin-top: 4px;">
         ※本サイトに掲載している施設情報は、各自治体オープンデータ（クリエイティブ・コモンズ 表示 / CC BY）等の公的情報を基に作成しています。
       </p>
     </div>
   </footer>
+
+  <a href="#search-section" class="fixed inset-x-3 bottom-3 z-40 rounded-full bg-emerald-700 px-4 py-3 text-center text-sm font-bold text-white no-underline shadow-lg md:hidden">条件からぴったりのキャンプ場を探す ↓</a>
 
   <script src="./js/app.js"></script>
 </body>

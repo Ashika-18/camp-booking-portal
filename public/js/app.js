@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const FAVORITE_STORAGE_KEY = 'camp-booking-favorites';
     let allSites = [];
     const activeFilters = new Set();
+    const favoriteIds = loadFavoriteIds();
+    let favoriteOnly = false;
   
     const sitesContainer = document.getElementById('sites-container');
     const resultCounter = document.getElementById('result-counter');
@@ -16,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const memoOutput = document.getElementById('memo-output');
     const memoText = document.getElementById('memo-text');
     const bookingActions = document.getElementById('booking-actions');
+    const favoriteBar = document.getElementById('favorite-bar');
+    const favoriteCountText = document.getElementById('favorite-count-text');
+    const btnToggleFavoriteFilter = document.getElementById('btn-toggle-favorite-filter');
+    const btnClearFavorites = document.getElementById('btn-clear-favorites');
   
     let selectedSite = null;
   
@@ -37,6 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
           rawSites = data.data;
         }
         allSites = rawSites.map(normalizeSite);
+        pruneFavorites();
+        updateFavoriteBar();
   
         applyFilters();
       } catch (err) {
@@ -67,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const targetString = `${name} ${address} ${site.recommend || ''} ${site.specs || ''} ${facilities}`.toLowerCase();
           if (!targetString.includes(keyword)) return false;
         }
+        if (favoriteOnly && !favoriteIds.has(String(site.id))) return false;
         return true;
       });
   
@@ -95,6 +105,48 @@ document.addEventListener('DOMContentLoaded', () => {
     return campImages[index % campImages.length];
   }
 
+  function buildCardBadges(site) {
+    const badges = [];
+    const name = site.name || '';
+    const type = site.type || '';
+    const price = String(site.price || '');
+
+    if (hasPowerAmenity(site)) {
+      badges.push('<span class="card-badge badge-power">⚡ AC電源あり</span>');
+    }
+    if (price.includes('無料') || /(?:¥|￥)\s*0(?!\d)|(?:^|[^\d])0円/.test(price)) {
+      badges.push('<span class="card-badge badge-free">無料</span>');
+    }
+    if (hasCarAccessAmenity(site)) {
+      badges.push('<span class="card-badge badge-auto">🚗 車横付け</span>');
+    }
+    if (/コテージ|ロッジ/.test(`${name} ${type}`)) {
+      badges.push('<span class="card-badge badge-cottage">🏠 コテージ</span>');
+    }
+
+    return badges.length ? `<div class="card-badges">${badges.join('')}</div>` : '';
+  }
+
+  function buildFacilityIcons(site) {
+    const specs = site.specs || '';
+    const rules = site.rules || '';
+    const recommend = site.recommend || '';
+    const name = site.name || '';
+    const facilities = Array.isArray(site.facilities) ? site.facilities.join(' ') : '';
+    const hasToilet = hasFlushToiletAmenity(site);
+    const hasBath = /温泉|風呂|シャワー|入浴/.test(`${specs} ${rules} ${recommend} ${facilities} ${name}`);
+    const hasCar = hasCarAccessAmenity(site);
+
+    const icon = (available, kind, label) =>
+      `<span class="facility-icon icon-${kind} ${available ? 'is-available' : 'is-unavailable'}">${label}</span>`;
+
+    return `<div class="facility-icons">${[
+      icon(hasToilet, 'toilet', '🚻 水洗トイレ'),
+      icon(hasBath, 'bath', '♨️ 温泉・風呂'),
+      icon(hasCar, 'car', '🚗 車横付け')
+    ].join('')}</div>`;
+  }
+
   function renderSites(sites) {
     resultCounter.textContent = `該当件数: ${sites.length}件 / 全${allSites.length}件`;
 
@@ -109,15 +161,20 @@ document.addEventListener('DOMContentLoaded', () => {
         .join('');
 
       const imageUrl = getSiteImage(site, index);
+      const badgesHtml = buildCardBadges(site);
+      const isFav = favoriteIds.has(String(site.id));
 
       return `
         <article class="site-card">
           <div class="site-card-image">
             <img src="${imageUrl}" alt="${escapeHTML(site.name)}" loading="lazy">
+            ${badgesHtml}
+            <button type="button" class="btn-favorite${isFav ? ' is-active' : ''}" data-id="${site.id}" title="${isFav ? 'キープ解除' : 'キープする'}" aria-pressed="${isFav ? 'true' : 'false'}" aria-label="${isFav ? 'キープ解除' : 'キープする'}">${isFav ? '❤️' : '🤍'}</button>
           </div>
           <div class="site-card-body">
             <h4>${escapeHTML(site.name)}</h4>
             <div class="site-recommend">${escapeHTML(site.recommend || 'おすすめファミリーサイト')}</div>
+            ${buildFacilityIcons(site)}
             <ul class="site-specs">
               <li>📍 所在地: ${escapeHTML(site.address || '兵庫県内')}</li>
               <li>⛺ 広さ・区画: ${escapeHTML(site.specs || 'フリーサイト')}</li>
@@ -278,6 +335,78 @@ bookingActions.appendChild(noTelNotice);
     }
   });
   
+    sitesContainer.addEventListener('click', (event) => {
+      const keepBtn = event.target.closest('.btn-favorite');
+      if (!keepBtn || !sitesContainer.contains(keepBtn)) return;
+      const siteId = keepBtn.getAttribute('data-id');
+      if (favoriteIds.has(siteId)) {
+        favoriteIds.delete(siteId);
+      } else {
+        favoriteIds.add(siteId);
+      }
+      saveFavoriteIds();
+      if (favoriteIds.size === 0) favoriteOnly = false;
+      updateFavoriteBar();
+      if (favoriteOnly) {
+        applyFilters();
+      } else {
+        const kept = favoriteIds.has(siteId);
+        keepBtn.classList.toggle('is-active', kept);
+        keepBtn.title = kept ? 'キープ解除' : 'キープする';
+        keepBtn.setAttribute('aria-pressed', kept ? 'true' : 'false');
+        keepBtn.setAttribute('aria-label', keepBtn.title);
+        keepBtn.textContent = kept ? '❤️' : '🤍';
+      }
+    });
+
+    btnToggleFavoriteFilter.addEventListener('click', () => {
+      favoriteOnly = !favoriteOnly;
+      updateFavoriteBar();
+      applyFilters();
+    });
+
+    btnClearFavorites.addEventListener('click', () => {
+      favoriteIds.clear();
+      favoriteOnly = false;
+      saveFavoriteIds();
+      updateFavoriteBar();
+      applyFilters();
+    });
+
+    function updateFavoriteBar() {
+      const count = favoriteIds.size;
+      favoriteCountText.textContent = `キープした施設: ${count}件`;
+      favoriteBar.classList.toggle('hidden', count === 0);
+      btnToggleFavoriteFilter.classList.toggle('is-active', favoriteOnly);
+      btnToggleFavoriteFilter.setAttribute('aria-pressed', favoriteOnly ? 'true' : 'false');
+      btnToggleFavoriteFilter.textContent = favoriteOnly ? 'すべての施設を表示' : 'キープ中のみ表示';
+    }
+
+    function pruneFavorites() {
+      const validIds = new Set(allSites.map(site => String(site.id)));
+      let changed = false;
+      for (const id of favoriteIds) {
+        if (!validIds.has(id)) {
+          favoriteIds.delete(id);
+          changed = true;
+        }
+      }
+      if (changed) saveFavoriteIds();
+    }
+
+    function loadFavoriteIds() {
+      try {
+        const stored = JSON.parse(localStorage.getItem(FAVORITE_STORAGE_KEY) || '[]');
+        return new Set(Array.isArray(stored) ? stored.map(String) : []);
+      } catch (err) {
+        return new Set();
+      }
+    }
+
+    function saveFavoriteIds() {
+      localStorage.setItem(FAVORITE_STORAGE_KEY, JSON.stringify([...favoriteIds]));
+    }
+
     // 6. 検索・フィルターイベント
     cityFilter.addEventListener('change', applyFilters);
     searchInput.addEventListener('input', applyFilters);
@@ -297,6 +426,18 @@ bookingActions.appendChild(noTelNotice);
       });
     });
 
+    document.querySelectorAll('[data-criteria]').forEach(card => {
+      card.addEventListener('click', () => {
+        const type = card.getAttribute('data-criteria');
+        activeFilters.clear();
+        if (type) activeFilters.add(type);
+        syncFilterButtons();
+        applyFilters();
+        const search = document.getElementById('search-section');
+        if (search) search.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
     function syncFilterButtons() {
       filterBtns.forEach(btn => {
         const type = btn.getAttribute('data-type');
@@ -310,39 +451,67 @@ bookingActions.appendChild(noTelNotice);
       return String(name || '').replace(/（[^）]*）\s*$/g, '');
     }
 
+    function facilityText(site) {
+      return Array.isArray(site.facilities) ? site.facilities.join(' ') : '';
+    }
+
+    function planText(site) {
+      return `${stripArea(site.name)} ${site.specs || ''} ${site.type || ''}`;
+    }
+
+    function hasCarAccessAmenity(site) {
+      const text = `${planText(site)} ${site.rules || ''}`;
+      if (/乗入不可|乗り入れ不可|乗り入れはでき|持込テントエリア|青少年野外|野営場/.test(text)) return false;
+      return /オートキャンプ|オートサイト|車横付け|車乗り入れ|車乗入/.test(planText(site));
+    }
+
+    function hasFlushToiletAmenity(site) {
+      const text = `${facilityText(site)} ${site.specs || ''} ${site.rules || ''}`;
+      if (/仮設トイレ|汲み取り|バイオトイレ/.test(text)) return false;
+      return /水洗トイレ|ウォシュレット|温水洗浄便座|清潔な洋式トイレ|flush_toilet/.test(text);
+    }
+
+    function hasPowerAmenity(site) {
+      const text = `${site.specs || ''} ${facilityText(site)} ${site.rules || ''}`;
+      if (/電源なし|電源無|電源はなし|AC電源：なし|AC電源:なし/.test(text)) return false;
+      return /電源付きサイト|AC電源あり|各サイト電源|1000W/.test(text);
+    }
+
+    function hasGrassAmenity(site) {
+      const text = `${site.groundType || ''} ${facilityText(site)}`;
+      if (/林間|砂利|川原|ウッドデッキ|傾斜|ゴロゴロ/.test(text)) return false;
+      return /芝生サイト|芝生・平坦|天然芝|フラットな草地/.test(text);
+    }
+
     const filterMatchers = {
       auto_power(site) {
-        return Boolean(site.power)
-          || (site.specs && site.specs.includes('電源'))
-          || (site.recommend && site.recommend.includes('電源'));
+        return hasPowerAmenity(site);
       },
       auto_standard(site) {
-        const text = `${site.name || ''} ${site.specs || ''} ${site.rules || ''}`;
-        if (/乗入不可|乗り入れはでき/.test(text)) return false;
-        return site.type === 'auto_standard' || (site.specs && site.specs.includes('区画'));
+        return hasCarAccessAmenity(site);
+      },
+      flush_toilet(site) {
+        return hasFlushToiletAmenity(site);
+      },
+      grass(site) {
+        return hasGrassAmenity(site);
       },
       cottage(site) {
-        return site.type === 'cottage' || (site.name && site.name.includes('コテージ'));
+        return site.type === 'cottage' || /コテージ|ロッジ|バンガロー|宿泊棟/.test(site.name || '');
       },
       waterside(site) {
         const label = `${stripArea(site.name)} ${site.recommend || ''}`;
         return /川代|川の音|能勢川|渓谷|渓流|ダム|湖|池/.test(label);
       },
-      sea(site) {
-        const label = `${stripArea(site.name)} ${site.recommend || ''}`;
-        return /海|ビーチ|海岸|海水浴|潮干/.test(label);
-      },
       highland(site) {
-        return stripArea(site.name).includes('高原') || (site.recommend || '').includes('高原');
+        const name = stripArea(site.name);
+        return /高原|森林/.test(name) || (site.recommend || '').includes('高原');
       },
       onsen(site) {
-        return `${stripArea(site.name)} ${site.recommend || ''}`.includes('温泉');
+        return /温泉|風呂|入浴/.test(`${stripArea(site.name)} ${site.recommend || ''} ${facilityText(site)} ${site.rules || ''}`);
       },
       budget(site) {
         return /無料|格安|¥0|￥0/.test(String(site.price || ''));
-      },
-      glamping(site) {
-        return `${site.name || ''} ${site.recommend || ''}`.includes('グランピング');
       }
     };
   
@@ -379,5 +548,6 @@ bookingActions.appendChild(noTelNotice);
     }
   
     // 初回ロード実行
+    updateFavoriteBar();
     fetchSites();
   });
