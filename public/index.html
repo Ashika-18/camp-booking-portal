@@ -83,12 +83,19 @@
             </div>
           </div>
 
-          <div class="filter-group">
-            <button class="filter-btn active" data-type="all">すべて</button>
-            <button class="filter-btn" data-type="auto_power">電源付き</button>
-            <button class="filter-btn" data-type="auto_standard">標準オート</button>
-            <button class="filter-btn" data-type="cottage">コテージ</button>
+          <div class="filter-group" role="group" aria-label="絞り込み条件">
+            <button type="button" class="filter-btn active" data-type="all" aria-pressed="true">すべて</button>
+            <button type="button" class="filter-btn" data-type="auto_power" aria-pressed="false">電源付き</button>
+            <button type="button" class="filter-btn" data-type="auto_standard" aria-pressed="false">車乗り入れ可</button>
+            <button type="button" class="filter-btn" data-type="cottage" aria-pressed="false">コテージ</button>
+            <button type="button" class="filter-btn" data-type="waterside" aria-pressed="false">川・水辺</button>
+            <button type="button" class="filter-btn" data-type="sea" aria-pressed="false">海・ビーチ</button>
+            <button type="button" class="filter-btn" data-type="highland" aria-pressed="false">高原</button>
+            <button type="button" class="filter-btn" data-type="onsen" aria-pressed="false">温泉</button>
+            <button type="button" class="filter-btn" data-type="budget" aria-pressed="false">無料・格安</button>
+            <button type="button" class="filter-btn" data-type="glamping" aria-pressed="false">グランピング</button>
           </div>
+          <p class="filter-hint">複数選べます。選んだ条件をすべて満たす施設だけ表示します。</p>
         </div>
 
         <div id="sites-container" class="sites-grid">

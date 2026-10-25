@@ -242,6 +242,12 @@
   border-color: var(--primary);
   font-weight: 600;
   }
+
+  .filter-hint {
+  margin: 10px 0 0;
+  font-size: 0.8rem;
+  color: #64748b;
+  }
   
   /* 3. カード一覧グリッド：360px確保し、1行最大3列に余裕を持たせる */
   .sites-grid,

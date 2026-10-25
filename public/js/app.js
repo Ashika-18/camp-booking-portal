@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let allSites = [];
-    let currentFilter = 'all';
+    const activeFilters = new Set();
   
     const sitesContainer = document.getElementById('sites-container');
     const resultCounter = document.getElementById('result-counter');
@@ -57,18 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (selectedCity && !address.includes(selectedCity) && !name.includes(selectedCity)) {
           return false;
         }
-        // スタイルボタン絞り込み
-        if (currentFilter !== 'all') {
-          if (currentFilter === 'auto_power') {
-            const hasPower = site.power || (site.specs && site.specs.includes('電源')) || (site.recommend && site.recommend.includes('電源'));
-            if (!hasPower) return false;
-          } else if (currentFilter === 'auto_standard') {
-            const isStandard = site.type === 'auto_standard' || (site.specs && site.specs.includes('区画'));
-            if (!isStandard) return false;
-          } else if (currentFilter === 'cottage') {
-            const isCottage = site.type === 'cottage' || (site.name && site.name.includes('コテージ'));
-            if (!isCottage) return false;
-          }
+        for (const type of activeFilters) {
+          const matcher = filterMatchers[type];
+          if (matcher && !matcher(site)) return false;
         }
         // キーワード検索
         if (keyword) {
@@ -293,12 +284,67 @@ bookingActions.appendChild(noTelNotice);
   
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentFilter = btn.getAttribute('data-type');
+        const type = btn.getAttribute('data-type');
+        if (type === 'all') {
+          activeFilters.clear();
+        } else if (activeFilters.has(type)) {
+          activeFilters.delete(type);
+        } else {
+          activeFilters.add(type);
+        }
+        syncFilterButtons();
         applyFilters();
       });
     });
+
+    function syncFilterButtons() {
+      filterBtns.forEach(btn => {
+        const type = btn.getAttribute('data-type');
+        const on = type === 'all' ? activeFilters.size === 0 : activeFilters.has(type);
+        btn.classList.toggle('active', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+
+    function stripArea(name) {
+      return String(name || '').replace(/（[^）]*）\s*$/g, '');
+    }
+
+    const filterMatchers = {
+      auto_power(site) {
+        return Boolean(site.power)
+          || (site.specs && site.specs.includes('電源'))
+          || (site.recommend && site.recommend.includes('電源'));
+      },
+      auto_standard(site) {
+        const text = `${site.name || ''} ${site.specs || ''} ${site.rules || ''}`;
+        if (/乗入不可|乗り入れはでき/.test(text)) return false;
+        return site.type === 'auto_standard' || (site.specs && site.specs.includes('区画'));
+      },
+      cottage(site) {
+        return site.type === 'cottage' || (site.name && site.name.includes('コテージ'));
+      },
+      waterside(site) {
+        const label = `${stripArea(site.name)} ${site.recommend || ''}`;
+        return /川代|川の音|能勢川|渓谷|渓流|ダム|湖|池/.test(label);
+      },
+      sea(site) {
+        const label = `${stripArea(site.name)} ${site.recommend || ''}`;
+        return /海|ビーチ|海岸|海水浴|潮干/.test(label);
+      },
+      highland(site) {
+        return stripArea(site.name).includes('高原') || (site.recommend || '').includes('高原');
+      },
+      onsen(site) {
+        return `${stripArea(site.name)} ${site.recommend || ''}`.includes('温泉');
+      },
+      budget(site) {
+        return /無料|格安|¥0|￥0/.test(String(site.price || ''));
+      },
+      glamping(site) {
+        return `${site.name || ''} ${site.recommend || ''}`.includes('グランピング');
+      }
+    };
   
     function normalizeSite(site) {
       const notes = site.notes || site.rules || '';
