@@ -7176,5 +7176,1393 @@
     "hasFlushingToilet": true,
     "hasPower": true,
     "hasGrass": true
+  },
+  {
+    "id": "shiga_001",
+    "name": "マイアミ浜オートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "野洲市",
+    "description": "琵琶湖畔に広がる高規格オートキャンプ場。全サイト車横付け可能で温水シャワーや個別電源などファミリーが安心できる設備が最高峰に充実しています。",
+    "price": "¥7,000〜（オート区画）",
+    "imageUrl": "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://maiami.info/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト",
+      "温水シャワー"
+    ],
+    "rules": [
+      "直火禁止（焚き火台と保護シート必須）",
+      "22時消灯・サイレントタイム厳守"
+    ],
+    "address": "野洲市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "琵琶湖畔に広がる高規格オートキャンプ場。全サイト車横付け可能で温水シャワーや個別電源などファミリーが安心できる設備が最高峰に充実しています。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "直火禁止（焚き火台と保護シート必須）。22時消灯・サイレントタイム厳守。",
+    "url": "http://maiami.info/"
+  },
+  {
+    "id": "shiga_002",
+    "name": "マキノ高原キャンプ場",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "メタセコイア並木すぐそばの広大な高原サイト。場内に温泉施設「マキノ高原温泉さらさ」があり、広々とした芝生広場で初心者ものびのび過ごせます。",
+    "price": "¥5,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://makinokougen.co.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "温泉近く・場内風呂",
+      "高原・森林",
+      "芝生・平坦サイト",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり"
+    ],
+    "rules": [
+      "高原につき強風時のガイロープ固定必須",
+      "ゴミは分別回収"
+    ],
+    "address": "高島市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "メタセコイア並木すぐそばの広大な高原サイト。場内に温泉施設「マキノ高原温泉さらさ」があり、広々とした芝生広場で初心者ものびのび過ごせます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "高原につき強風時のガイロープ固定必須。ゴミは分別回収。",
+    "url": "http://makinokougen.co.jp/"
+  },
+  {
+    "id": "shiga_003",
+    "name": "グリム冒険の森",
+    "prefecture": "滋賀県",
+    "area": "日野町",
+    "description": "充実した遊具や体験プログラムが充実したファミリー特化のキャンプ場。整備されたAC電源付きオートサイトや快適なコテージが人気です。",
+    "price": "¥5,800〜",
+    "imageUrl": "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://www.grimm-mori.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "コテージ・宿泊棟",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト",
+      "子ども遊具あり"
+    ],
+    "rules": [
+      "直火禁止",
+      "ペット同伴時はリード着用必須"
+    ],
+    "address": "日野町",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "充実した遊具や体験プログラムが充実したファミリー特化のキャンプ場。整備されたAC電源付きオートサイトや快適なコテージが人気です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "直火禁止。ペット同伴時はリード着用必須。",
+    "url": "http://www.grimm-mori.com/"
+  },
+  {
+    "id": "shiga_004",
+    "name": "六ツ矢崎浜オートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "琵琶湖の波打ち際まで車の乗り入れができる開放感抜群の湖畔サイト。平坦な草地で設営しやすく、朝日が琵琶湖から昇る絶景を楽しめます。",
+    "price": "¥4,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://takashima-kanko.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": true,
+    "tags": [
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "湖岸へのポイ捨て厳禁",
+      "ペットエリアと一般エリアの区分厳守"
+    ],
+    "address": "高島市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": false,
+    "recommendedFor": "琵琶湖の波打ち際まで車の乗り入れができる開放感抜群の湖畔サイト。平坦な草地で設営しやすく、朝日が琵琶湖から昇る絶景を楽しめます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "湖岸へのポイ捨て厳禁。ペットエリアと一般エリアの区分厳守。",
+    "url": "https://takashima-kanko.jp/"
+  },
+  {
+    "id": "shiga_005",
+    "name": "宝船温泉ファミリーキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "目の前が琵琶湖のビーチになっており、天然温泉の宿が隣接するアットホームなキャンプ場。水遊びと温泉を同時に楽しめます。",
+    "price": "¥5,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://takarabune-onsen.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": false,
+    "tags": [
+      "温泉近く・場内風呂",
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり"
+    ],
+    "rules": [
+      "砂地のため長めのペグ推奨",
+      "直火禁止"
+    ],
+    "address": "高島市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "砂利",
+    "powerAvailable": true,
+    "recommendedFor": "目の前が琵琶湖のビーチになっており、天然温泉の宿が隣接するアットホームなキャンプ場。水遊びと温泉を同時に楽しめます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "砂地のため長めのペグ推奨。直火禁止。",
+    "url": "http://takarabune-onsen.com/"
+  },
+  {
+    "id": "shiga_006",
+    "name": "白浜荘オートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "近江白浜の水泳場に隣接する松林のオートキャンプ場。本館の大浴場や露天風呂が利用でき、サイトへの車の横付けも快適です。",
+    "price": "¥6,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://www.shirahamaso.co.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": false,
+    "tags": [
+      "琵琶湖・湖畔",
+      "温泉近く・場内風呂",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり"
+    ],
+    "rules": [
+      "松林の根を傷つけないよう設営",
+      "消音時間22時"
+    ],
+    "address": "高島市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "砂利",
+    "powerAvailable": true,
+    "recommendedFor": "近江白浜の水泳場に隣接する松林のオートキャンプ場。本館の大浴場や露天風呂が利用でき、サイトへの車の横付けも快適です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "松林の根を傷つけないよう設営。消音時間22時。",
+    "url": "http://www.shirahamaso.co.jp/"
+  },
+  {
+    "id": "shiga_007",
+    "name": "十二坊温泉オートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "湖南市",
+    "description": "天然温泉「ゆらら」が併設されたコンパクトで清潔感あふれるキャンプ場。全サイト電源完備で手入れの行き届いた水洗トイレが初心者に大好評です。",
+    "price": "¥6,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1496545672447-f699b503d270?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://www.12bou-onsen.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "温泉近く・場内風呂",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "直火禁止",
+      "予約制温泉の利用ルール遵守"
+    ],
+    "address": "湖南市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "天然温泉「ゆらら」が併設されたコンパクトで清潔感あふれるキャンプ場。全サイト電源完備で手入れの行き届いた水洗トイレが初心者に大好評です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "直火禁止。予約制温泉の利用ルール遵守。",
+    "url": "http://www.12bou-onsen.com/"
+  },
+  {
+    "id": "shiga_008",
+    "name": "かもしかオートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "甲賀市",
+    "description": "鈴鹿山麓の清流沿いにある静かな高規格サイト。天然温泉「大河原温泉」が隣接しており、清潔な設備とキャビンも揃っています。",
+    "price": "¥6,600〜",
+    "imageUrl": "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://kamoshika-resort.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "川・水辺",
+      "温泉近く・場内風呂",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "川遊び時はお子様のライフジャケット着用推奨",
+      "直火禁止"
+    ],
+    "address": "甲賀市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "鈴鹿山麓の清流沿いにある静かな高規格サイト。天然温泉「大河原温泉」が隣接しており、清潔な設備とキャビンも揃っています。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "川遊び時はお子様のライフジャケット着用推奨。直火禁止。",
+    "url": "https://kamoshika-resort.com/"
+  },
+  {
+    "id": "shiga_009",
+    "name": "青川峡キャンピングパーク近郊・グリーンパーク山東",
+    "prefecture": "滋賀県",
+    "area": "米原市",
+    "description": "伊吹山を一望できる広大な複合リゾート。大型遊具やアスレチック、天然温泉「美肌の湯」があり、初心者ファミリーのデビューに最適です。",
+    "price": "¥5,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://greenpark-santo.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "温泉近く・場内風呂",
+      "芝生・平坦サイト",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "子ども遊具あり"
+    ],
+    "rules": [
+      "指定場所以外での喫煙禁止",
+      "ゴミの分別徹底"
+    ],
+    "address": "米原市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "伊吹山を一望できる広大な複合リゾート。大型遊具やアスレチック、天然温泉「美肌の湯」があり、初心者ファミリーのデビューに最適です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "指定場所以外での喫煙禁止。ゴミの分別徹底。",
+    "url": "https://greenpark-santo.com/"
+  },
+  {
+    "id": "shiga_010",
+    "name": "矢橋帰帆島公園キャンプ場",
+    "prefecture": "滋賀県",
+    "area": "草津市",
+    "description": "琵琶湖に浮かぶ人工島の巨大公園内にある公営格安キャンプ場。巨大滑り台やプールなどの遊具が充実しており、コスパ抜群です。",
+    "price": "¥1,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://www.hikari-g.com/kihan/",
+    "hasCarAccess": false,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": true,
+    "tags": [
+      "無料・格安",
+      "芝生・平坦サイト",
+      "水洗トイレ完備",
+      "子ども遊具あり"
+    ],
+    "rules": [
+      "車の乗り入れ不可（専用リヤカー利用）",
+      "ゴミ持ち帰り"
+    ],
+    "address": "草津市",
+    "type": "tent",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "持込テントエリア（車の乗り入れ不可）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": false,
+    "recommendedFor": "琵琶湖に浮かぶ人工島の巨大公園内にある公営格安キャンプ場。巨大滑り台やプールなどの遊具が充実しており、コスパ抜群です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "車の乗り入れ不可（専用リヤカー利用）。ゴミ持ち帰り。",
+    "url": "https://www.hikari-g.com/kihan/"
+  },
+  {
+    "id": "shiga_011",
+    "name": "知内浜オートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "琵琶湖最北端の美しい水辺に面したオートキャンプ場。ペット連れにも優しく、水洗トイレや温水シャワーなど設備が整っています。",
+    "price": "¥6,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://chinai-hama.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "発電機の使用禁止",
+      "花火は指定の浜辺でのみ可"
+    ],
+    "address": "高島市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "琵琶湖最北端の美しい水辺に面したオートキャンプ場。ペット連れにも優しく、水洗トイレや温水シャワーなど設備が整っています。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "発電機の使用禁止。花火は指定の浜辺でのみ可。",
+    "url": "http://chinai-hama.com/"
+  },
+  {
+    "id": "shiga_012",
+    "name": "ウッディパル余呉",
+    "prefecture": "滋賀県",
+    "area": "長浜市",
+    "description": "自然豊かな森林に囲まれたアウトドア施設。コテージやパターゴルフ、アスレチックがあり、テント設営が不安なファミリーにも安心です。",
+    "price": "¥4,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://woodypal.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": true,
+    "tags": [
+      "コテージ・宿泊棟",
+      "高原・森林",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "子ども遊具あり"
+    ],
+    "rules": [
+      "直火禁止",
+      "野生動物対策のため食材を外に置かないこと"
+    ],
+    "address": "長浜市",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": false,
+    "recommendedFor": "自然豊かな森林に囲まれたアウトドア施設。コテージやパターゴルフ、アスレチックがあり、テント設営が不安なファミリーにも安心です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "直火禁止。野生動物対策のため食材を外に置かないこと。",
+    "url": "https://woodypal.jp/"
+  },
+  {
+    "id": "shiga_013",
+    "name": "妹背の里（いもせのさと）",
+    "prefecture": "滋賀県",
+    "area": "竜王町",
+    "description": "清流と芝生広場が広がる公園内のキャンプ場。バンガローも併設され、サイトは手入れされたフラットな芝生で快適に過ごせます。",
+    "price": "¥3,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1496545672447-f699b503d270?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://ryuoh.or.jp/imose.html",
+    "hasCarAccess": false,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": true,
+    "tags": [
+      "芝生・平坦サイト",
+      "水洗トイレ完備",
+      "コテージ・宿泊棟",
+      "無料・格安"
+    ],
+    "rules": [
+      "車乗り入れ不可（荷物搬入用台車あり）",
+      "直火禁止"
+    ],
+    "address": "竜王町",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "持込テントエリア（車の乗り入れ不可）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": false,
+    "recommendedFor": "清流と芝生広場が広がる公園内のキャンプ場。バンガローも併設され、サイトは手入れされたフラットな芝生で快適に過ごせます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "車乗り入れ不可（荷物搬入用台車あり）。直火禁止。",
+    "url": "http://ryuoh.or.jp/imose.html"
+  },
+  {
+    "id": "shiga_014",
+    "name": "休暇村近江八幡キャンプ場",
+    "prefecture": "滋賀県",
+    "area": "近江八幡市",
+    "description": "宮ヶ浜水泳場すぐ前のリゾートキャンプ場。本館の温泉入浴プランや手ぶらキャンプセットがあり、初心者でも手軽に湖畔ステイを楽しめます。",
+    "price": "¥6,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://www.qkamura.or.jp/ohmi/camp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "琵琶湖・湖畔",
+      "温泉近く・場内風呂",
+      "手ぶらプラン",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり"
+    ],
+    "rules": [
+      "直火禁止",
+      "指定ゴミ袋での分別回収"
+    ],
+    "address": "近江八幡市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "宮ヶ浜水泳場すぐ前のリゾートキャンプ場。本館の温泉入浴プランや手ぶらキャンプセットがあり、初心者でも手軽に湖畔ステイを楽しめます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "直火禁止。指定ゴミ袋での分別回収。",
+    "url": "https://www.qkamura.or.jp/ohmi/camp/"
+  },
+  {
+    "id": "shiga_015",
+    "name": "ビラデスト今津",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "標高550mの山頂に位置する総合アウトドア施設。10m×10mの広々とした個別オートサイトにはAC電源と流し台が全区画に完備されています。",
+    "price": "¥6,800〜",
+    "imageUrl": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://villagedest.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "高原・森林",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト",
+      "コテージ・宿泊棟"
+    ],
+    "rules": [
+      "夜間は冷え込むため防寒着必須",
+      "直火禁止"
+    ],
+    "address": "高島市",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "標高550mの山頂に位置する総合アウトドア施設。10m×10mの広々とした個別オートサイトにはAC電源と流し台が全区画に完備されています。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "夜間は冷え込むため防寒着必須。直火禁止。",
+    "url": "http://villagedest.com/"
+  },
+  {
+    "id": "shiga_016",
+    "name": "リバーランズ角川",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "渓流沿いの静かな林間・草地サイト。人工渓流でニジマス釣りが体験でき、木陰が多く夏でも涼しく過ごせます。",
+    "price": "¥4,800〜",
+    "imageUrl": "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://www.kadokawa-camp.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": true,
+    "tags": [
+      "川・水辺",
+      "高原・森林",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "直火禁止",
+      "釣り池への転落に注意"
+    ],
+    "address": "高島市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": false,
+    "recommendedFor": "渓流沿いの静かな林間・草地サイト。人工渓流でニジマス釣りが体験でき、木陰が多く夏でも涼しく過ごせます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "直火禁止。釣り池への転落に注意。",
+    "url": "http://www.kadokawa-camp.jp/"
+  },
+  {
+    "id": "shiga_017",
+    "name": "滝と渓流の高嶺ヴィレッジ",
+    "prefecture": "滋賀県",
+    "area": "甲賀市",
+    "description": "清流のせせらぎが心地よい山間オートキャンプ場。川遊びが目の前ででき、区画もフラットに整備されていて初心者でもテントが張りやすいです。",
+    "price": "¥5,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://takanne.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "川・水辺",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "増水時の川遊び禁止",
+      "夜21時以降は静粛に"
+    ],
+    "address": "甲賀市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "清流のせせらぎが心地よい山間オートキャンプ場。川遊びが目の前ででき、区画もフラットに整備されていて初心者でもテントが張りやすいです。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "増水時の川遊び禁止。夜21時以降は静粛に。",
+    "url": "https://takanne.com/"
+  },
+  {
+    "id": "shiga_018",
+    "name": "滋賀県希望が丘文化公園野外活動センター",
+    "prefecture": "滋賀県",
+    "area": "野洲市",
+    "description": "県内屈指の大規模県営公園。宿泊ロッジや常設テントが完備されており、手ぶらや学校・家族のアウトドア体験に適しています。",
+    "price": "¥2,200〜",
+    "imageUrl": "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://www.kibounooka-park.com/",
+    "hasCarAccess": false,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": true,
+    "tags": [
+      "無料・格安",
+      "コテージ・宿泊棟",
+      "水洗トイレ完備",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "車の乗り入れ不可（中央駐車場利用）",
+      "ゴミ持ち帰り"
+    ],
+    "address": "野洲市",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "持込テントエリア（車の乗り入れ不可）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": false,
+    "recommendedFor": "県内屈指の大規模県営公園。宿泊ロッジや常設テントが完備されており、手ぶらや学校・家族のアウトドア体験に適しています。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "車の乗り入れ不可（中央駐車場利用）。ゴミ持ち帰り。",
+    "url": "https://www.kibounooka-park.com/"
+  },
+  {
+    "id": "shiga_019",
+    "name": "ニュー白浜オートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "松林越しに琵琶湖を望むオートキャンプ場。温水シャワーやコインランドリーがあり、連泊や小さな子ども連れの水遊びベースにぴったりです。",
+    "price": "¥5,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://shirahama-camp.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": false,
+    "tags": [
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり"
+    ],
+    "rules": [
+      "水着のまま売店・管理棟立ち入り禁止",
+      "直火禁止"
+    ],
+    "address": "高島市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "砂利",
+    "powerAvailable": true,
+    "recommendedFor": "松林越しに琵琶湖を望むオートキャンプ場。温水シャワーやコインランドリーがあり、連泊や小さな子ども連れの水遊びベースにぴったりです。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "水着のまま売店・管理棟立ち入り禁止。直火禁止。",
+    "url": "https://shirahama-camp.com/"
+  },
+  {
+    "id": "shiga_020",
+    "name": "黄和田キャンプ場",
+    "prefecture": "滋賀県",
+    "area": "東近江市",
+    "description": "愛知川の清流沿いにある自然派フリーサイト。予約不要で利用できる穴場スポットですが、直火や車の乗り入れルールが定められています。",
+    "price": "¥3,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1496545672447-f699b503d270?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://www.city.higashiomi.shiga.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": false,
+    "hasPower": false,
+    "hasGrass": false,
+    "tags": [
+      "川・水辺",
+      "無料・格安",
+      "車横付け（オート）"
+    ],
+    "rules": [
+      "仮設簡易トイレ中心",
+      "ゴミ完全持ち帰り"
+    ],
+    "address": "東近江市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "砂利",
+    "powerAvailable": false,
+    "recommendedFor": "愛知川の清流沿いにある自然派フリーサイト。予約不要で利用できる穴場スポットですが、直火や車の乗り入れルールが定められています。",
+    "facilities": [
+      "仮設トイレ",
+      "炊事場"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "仮設簡易トイレ中心。ゴミ完全持ち帰り。",
+    "url": "https://www.city.higashiomi.shiga.jp/"
+  },
+  {
+    "id": "shiga_021",
+    "name": "奥琵琶湖キャンプ場",
+    "prefecture": "滋賀県",
+    "area": "長浜市",
+    "description": "静かな森と琵琶湖に囲まれた落ち着きのあるキャンプ場。直火OKの常設かまど付き区画やペット専用ドッグラン付きコテージが人気です。",
+    "price": "¥5,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://okubiwako-camp.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": false,
+    "tags": [
+      "琵琶湖・湖畔",
+      "コテージ・宿泊棟",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり"
+    ],
+    "rules": [
+      "指定場所以外での直火禁止",
+      "21時以降は大声禁止"
+    ],
+    "address": "長浜市",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "砂利",
+    "powerAvailable": true,
+    "recommendedFor": "静かな森と琵琶湖に囲まれた落ち着きのあるキャンプ場。直火OKの常設かまど付き区画やペット専用ドッグラン付きコテージが人気です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "指定場所以外での直火禁止。21時以降は大声禁止。",
+    "url": "http://okubiwako-camp.com/"
+  },
+  {
+    "id": "shiga_022",
+    "name": "近江舞子うめのオートキャンプ場",
+    "prefecture": "滋賀県",
+    "area": "大津市",
+    "description": "JR近江舞子駅から徒歩圏内という抜群の好立地。琵琶湖まで歩いてすぐで、区画内に車を停めて手軽にデイキャンプや宿泊が楽しめます。",
+    "price": "¥5,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://umeno-camp.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": true,
+    "tags": [
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "水泳客との接触注意",
+      "直火禁止"
+    ],
+    "address": "大津市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": false,
+    "recommendedFor": "JR近江舞子駅から徒歩圏内という抜群の好立地。琵琶湖まで歩いてすぐで、区画内に車を停めて手軽にデイキャンプや宿泊が楽しめます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "水泳客との接触注意。直火禁止。",
+    "url": "https://umeno-camp.com/"
+  },
+  {
+    "id": "shiga_023",
+    "name": "青土ダムエコーバレイ",
+    "prefecture": "滋賀県",
+    "area": "甲賀市",
+    "description": "巨大な青土ダム湖のほとりにあるアウトドア施設。オフロードバギーや大型滑り台があり、全区画電源・水道付きオートサイトを備えています。",
+    "price": "¥6,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://www.koka-kanko.org/resort/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "川・水辺",
+      "コテージ・宿泊棟",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "子ども遊具あり"
+    ],
+    "rules": [
+      "ダム湖内への立ち入り厳禁",
+      "夜間照明の節電配慮"
+    ],
+    "address": "甲賀市",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "巨大な青土ダム湖のほとりにあるアウトドア施設。オフロードバギーや大型滑り台があり、全区画電源・水道付きオートサイトを備えています。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "ダム湖内への立ち入り厳禁。夜間照明の節電配慮。",
+    "url": "http://www.koka-kanko.org/resort/"
+  },
+  {
+    "id": "shiga_024",
+    "name": "大見いこいの広場",
+    "prefecture": "滋賀県",
+    "area": "長浜市",
+    "description": "高時川のほとりにある緑豊かな施設。ヴィラやコテージが揃い、オートキャンプサイトは芝生でフラット。テニスコートや子ども広場もあります。",
+    "price": "¥5,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "http://www.za.ztv.ne.jp/oomi-ikoi/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "川・水辺",
+      "コテージ・宿泊棟",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "川遊び時の増水警報に注意",
+      "ゴミ分別"
+    ],
+    "address": "長浜市",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "高時川のほとりにある緑豊かな施設。ヴィラやコテージが揃い、オートキャンプサイトは芝生でフラット。テニスコートや子ども広場もあります。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "川遊び時の増水警報に注意。ゴミ分別。",
+    "url": "http://www.za.ztv.ne.jp/oomi-ikoi/"
+  },
+  {
+    "id": "shiga_025",
+    "name": "矢川原緑地オートキャンプエリア（仮称・甲賀野営）",
+    "prefecture": "滋賀県",
+    "area": "甲賀市",
+    "description": "野洲川の河川敷にある無料・格安の河川緑地。野営スタイル向けで水道や仮設トイレのみのため、経験者向けのシンプルステイとなります。",
+    "price": "無料",
+    "imageUrl": "https://images.unsplash.com/photo-1537905569824-f89f14cceb68?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://www.city.koka.lg.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": false,
+    "hasPower": false,
+    "hasGrass": false,
+    "tags": [
+      "無料・格安",
+      "川・水辺",
+      "車横付け（オート）"
+    ],
+    "rules": [
+      "仮設トイレのみ（水洗なし）",
+      "直火禁止・ゴミ持ち帰り絶対厳守"
+    ],
+    "address": "甲賀市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "砂利",
+    "powerAvailable": false,
+    "recommendedFor": "野洲川の河川敷にある無料・格安の河川緑地。野営スタイル向けで水道や仮設トイレのみのため、経験者向けのシンプルステイとなります。",
+    "facilities": [
+      "仮設トイレ",
+      "炊事場"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "仮設トイレのみ（水洗なし）。直火禁止・ゴミ持ち帰り絶対厳守。",
+    "url": "https://www.city.koka.lg.jp/"
+  },
+  {
+    "id": "shiga_026",
+    "name": "二本松キャンプ水泳場",
+    "prefecture": "滋賀県",
+    "area": "長浜市",
+    "description": "奥琵琶湖の美しい水質と竹生島を望む絶景ロケーション。車の乗り入れ可能な浜辺サイトで、カヤックやSUP、水遊びを満喫できます。",
+    "price": "¥5,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://nihonmatsu.shiga.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": false,
+    "tags": [
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備"
+    ],
+    "rules": [
+      "砂利浜のため鍛造ペグ推奨",
+      "花火は21時まで"
+    ],
+    "address": "長浜市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "砂利",
+    "powerAvailable": false,
+    "recommendedFor": "奥琵琶湖の美しい水質と竹生島を望む絶景ロケーション。車の乗り入れ可能な浜辺サイトで、カヤックやSUP、水遊びを満喫できます。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "砂利浜のため鍛造ペグ推奨。花火は21時まで。",
+    "url": "https://nihonmatsu.shiga.jp/"
+  },
+  {
+    "id": "shiga_027",
+    "name": "ASOBIWA HIRA BASE",
+    "prefecture": "滋賀県",
+    "area": "大津市",
+    "description": "ハワイアンテイストのお洒落な湖畔アウトドアベース。綺麗なカフェバーやSUP体験があり、トイレやシャワーもリノベーション済みで清潔です。",
+    "price": "¥7,500〜",
+    "imageUrl": "https://images.unsplash.com/photo-1496545672447-f699b503d270?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://asobiwa-biwako.com/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "琵琶湖・湖畔",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "芝生・平坦サイト"
+    ],
+    "rules": [
+      "完全予約制",
+      "夜間の静粛時間遵守"
+    ],
+    "address": "大津市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "ハワイアンテイストのお洒落な湖畔アウトドアベース。綺麗なカフェバーやSUP体験があり、トイレやシャワーもリノベーション済みで清潔です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "完全予約制。夜間の静粛時間遵守。",
+    "url": "https://asobiwa-biwako.com/"
+  },
+  {
+    "id": "shiga_028",
+    "name": "滝谷公園キャンプ場",
+    "prefecture": "滋賀県",
+    "area": "高島市",
+    "description": "山深い渓流と滝のそばにある穴場キャンプ場。静寂の中で焚き火を楽しみたいファミリー向けで、清掃が行き届いた水洗トイレがあります。",
+    "price": "¥3,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1510312305653-8ed496efae75?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://takashima-kanko.jp/",
+    "hasCarAccess": false,
+    "hasFlushingToilet": true,
+    "hasPower": false,
+    "hasGrass": false,
+    "tags": [
+      "川・水辺",
+      "高原・森林",
+      "水洗トイレ完備",
+      "無料・格安"
+    ],
+    "rules": [
+      "駐車場からサイトまで徒歩移動（手運び）",
+      "直火禁止"
+    ],
+    "address": "高島市",
+    "type": "tent",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "持込テントエリア（車の乗り入れ不可）",
+    "groundType": "砂利",
+    "powerAvailable": false,
+    "recommendedFor": "山深い渓流と滝のそばにある穴場キャンプ場。静寂の中で焚き火を楽しみたいファミリー向けで、清掃が行き届いた水洗トイレがあります。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "駐車場からサイトまで徒歩移動（手運び）。直火禁止。",
+    "url": "https://takashima-kanko.jp/"
+  },
+  {
+    "id": "shiga_029",
+    "name": "綿向山麓・武佐キャンプ広場",
+    "prefecture": "滋賀県",
+    "area": "近江八幡市",
+    "description": "近江八幡郊外のフラットな芝生広場を活用したキャンプサイト。街中からのアクセスが良く、近くにスーパーや温泉施設が揃っています。",
+    "price": "¥4,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://www.city.omihachiman.lg.jp/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "芝生・平坦サイト",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "温泉近く・場内風呂"
+    ],
+    "rules": [
+      "21時以降の話し声配慮",
+      "ゴミ持ち帰り"
+    ],
+    "address": "近江八幡市",
+    "type": "auto_standard",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "近江八幡郊外のフラットな芝生広場を活用したキャンプサイト。街中からのアクセスが良く、近くにスーパーや温泉施設が揃っています。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "21時以降の話し声配慮。ゴミ持ち帰り。",
+    "url": "https://www.city.omihachiman.lg.jp/"
+  },
+  {
+    "id": "shiga_030",
+    "name": "エバーグレイズ琵琶湖",
+    "prefecture": "滋賀県",
+    "area": "大津市",
+    "description": "近江舞子の水辺に佇むアメリカンリゾートスタイルの超高規格グランピング＆キャンプ場。カヌー付きキャビンなど初心者が憧れる最高級の快適設備です。",
+    "price": "¥12,000〜",
+    "imageUrl": "https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?auto=format&fit=crop&w=800&q=80",
+    "officialUrl": "https://www.everglades.jp/biwako/",
+    "hasCarAccess": true,
+    "hasFlushingToilet": true,
+    "hasPower": true,
+    "hasGrass": true,
+    "tags": [
+      "琵琶湖・湖畔",
+      "コテージ・宿泊棟",
+      "車横付け（オート）",
+      "水洗トイレ完備",
+      "AC電源あり",
+      "手ぶらプラン"
+    ],
+    "rules": [
+      "施設内禁煙（指定喫煙所のみ）",
+      "リゾート規約厳守"
+    ],
+    "address": "大津市",
+    "type": "cottage",
+    "capacity": {
+      "min": 2,
+      "max": 6,
+      "unit": "人"
+    },
+    "size": "オートサイト（車横付け）",
+    "groundType": "芝生・平坦",
+    "powerAvailable": true,
+    "recommendedFor": "近江舞子の水辺に佇むアメリカンリゾートスタイルの超高規格グランピング＆キャンプ場。カヌー付きキャビンなど初心者が憧れる最高級の快適設備です。",
+    "facilities": [
+      "水洗トイレ完備",
+      "炊事場",
+      "AC電源あり",
+      "芝生サイト"
+    ],
+    "rentalOptions": [
+      "持参推奨"
+    ],
+    "notes": "施設内禁煙（指定喫煙所のみ）。リゾート規約厳守。",
+    "url": "https://www.everglades.jp/biwako/"
   }
 ]

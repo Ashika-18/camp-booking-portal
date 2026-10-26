@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 予約・申請URLの抽出（プロパティまたは本文URL）
-    let siteUrl = selectedSite.url || selectedSite.website || selectedSite.official_url || selectedSite.homepage || selectedSite.link || '';
+        let siteUrl = selectedSite.url || selectedSite.officialUrl || selectedSite.website || selectedSite.official_url || selectedSite.homepage || selectedSite.link || '';
     if (!siteUrl) {
       const fullText = `${selectedSite.rules || ''} ${selectedSite.specs || ''}`;
       const urlMatch = fullText.match(/https?:\/\/[^\s]+/);
@@ -557,8 +557,9 @@ bookingActions.appendChild(noTelNotice);
     };
   
     function normalizeSite(site) {
-      const notes = site.notes || site.rules || '';
-      const telMatch = notes.match(/0\d{1,3}-\d{1,4}-\d{3,4}/);
+      const ruleText = Array.isArray(site.rules) ? site.rules.join('。') : (site.rules || '');
+      const notes = typeof site.notes === 'string' && site.notes ? site.notes : ruleText;
+      const telMatch = String(notes).match(/0\d{1,3}-\d{1,4}-\d{3,4}/);
       const areaMatch = String(site.name || '').match(/（([^）]+)）\s*$/);
       const priceLabel = typeof site.price === 'number'
         ? `¥${site.price.toLocaleString('ja-JP')}〜`
@@ -566,7 +567,7 @@ bookingActions.appendChild(noTelNotice);
 
       return {
         ...site,
-        address: site.address || (areaMatch ? areaMatch[1] : '兵庫県内'),
+        address: site.address || site.area || (areaMatch ? areaMatch[1] : '兵庫県内'),
         power: Boolean(site.power ?? site.powerAvailable),
         specs: site.specs || site.size || '',
         recommend: site.recommend || site.recommendedFor || '',
