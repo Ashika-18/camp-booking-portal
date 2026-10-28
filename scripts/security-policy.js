@@ -5,16 +5,19 @@
  *
  * script-src の https://cdn.tailwindcss.com は、index.html が読み込む Tailwind CDN だけを追加している。
  * ここを外すとユーティリティクラスが当たらず、既存の画面が崩れる。
+ * googletagmanager.com / google-analytics.com は GTM と、コンテナ内の GA4 送信先。
+ * コンテナ未設定やブロック時も、ページ本体の script は 'self' のまま動く。
  */
 const ALLOWED_IMAGE_HOSTS = Object.freeze(['images.unsplash.com']);
 
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://www.googletagmanager.com https://tagmanager.google.com",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-  "img-src 'self' data: blob: https://images.unsplash.com https://*.unsplash.com",
+  "img-src 'self' data: blob: https://images.unsplash.com https://*.unsplash.com https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com",
   "font-src 'self' data: https://fonts.gstatic.com",
-  "connect-src 'self'",
+  "connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com",
+  "frame-src 'self' https://www.googletagmanager.com",
   "frame-ancestors 'none'",
   "base-uri 'self'",
   "form-action 'self'"

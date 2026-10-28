@@ -27,6 +27,103 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnClearFavorites = document.getElementById('btn-clear-favorites');
   
     let selectedSite = null;
+
+    const DATALAYER_KEYS = [
+      'campsite_name',
+      'campsite_area',
+      'link_url',
+      'tel_number',
+      'filter_tag_name',
+      'filter_status',
+      'selected_area'
+    ];
+
+    function pushDataLayer(eventName, params) {
+      try {
+        window.dataLayer = window.dataLayer || [];
+        const payload = { event: eventName };
+        DATALAYER_KEYS.forEach((key) => {
+          payload[key] = undefined;
+        });
+        Object.assign(payload, params || {});
+        window.dataLayer.push(payload);
+      } catch (err) {
+        // GTM 未読込や広告ブロッカーでも、検索・遷移・保存は継続する
+      }
+    }
+
+    function campsiteName(site) {
+      return site && site.name ? String(site.name) : '';
+    }
+
+    function campsiteAreaLabel(site) {
+      if (!site) return '';
+      const city = String(site.area || '').trim();
+      const pref = String(site.prefecture || '').trim();
+      if (city && pref) return `${city}・${pref}`;
+      return String(site.address || city || pref || '').trim();
+    }
+
+    function filterTagName(type, fallbackEl) {
+      if (type) {
+        const match = document.querySelector('.filter-btn[data-type="' + type + '"]');
+        if (match) return (match.textContent || '').trim();
+      }
+      const heading = fallbackEl && fallbackEl.querySelector ? fallbackEl.querySelector('h3') : null;
+      if (heading) return (heading.textContent || '').trim();
+      return type ? String(type) : '';
+    }
+
+    function siteFromElement(node) {
+      try {
+        const card = node && node.closest ? node.closest('.site-card') : null;
+        if (!card) return selectedSite;
+        const idNode = card.querySelector('[data-id]');
+        if (!idNode) return selectedSite;
+        const siteId = idNode.getAttribute('data-id');
+        return allSites.find(s => String(s.id) === String(siteId)) || selectedSite;
+      } catch (err) {
+        return selectedSite;
+      }
+    }
+
+    function isExternalHttpUrl(href) {
+      try {
+        const parsed = new URL(href, window.location.href);
+        if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return false;
+        return parsed.origin !== window.location.origin;
+      } catch (err) {
+        return false;
+      }
+    }
+
+    document.addEventListener('click', (event) => {
+      try {
+        const target = event.target;
+        const link = target && target.closest ? target.closest('a') : null;
+        if (!link) return;
+        const track = link.getAttribute('data-gtm-event');
+        const hrefAttr = link.getAttribute('href') || '';
+        const inCard = !!(link.closest && link.closest('.site-card'));
+        const site = siteFromElement(link);
+        if (track === 'click_official_site' || (inCard && isExternalHttpUrl(link.href))) {
+          pushDataLayer('click_official_site', {
+            campsite_name: link.getAttribute('data-campsite-name') || campsiteName(site),
+            campsite_area: link.getAttribute('data-campsite-area') || campsiteAreaLabel(site),
+            link_url: link.getAttribute('data-link-url') || link.href || ''
+          });
+          return;
+        }
+        if (track === 'click_tel' || hrefAttr.toLowerCase().indexOf('tel:') === 0) {
+          pushDataLayer('click_tel', {
+            campsite_name: link.getAttribute('data-campsite-name') || campsiteName(site),
+            tel_number: link.getAttribute('data-tel-number') || hrefAttr.replace(/^tel:/i, '')
+          });
+        }
+      } catch (err) {
+        // 計測に失敗してもリンクの通常遷移は止めない
+      }
+    });
   
     // 1. データ取得（配列直接・オブジェクト内包のどちらの形式でも安全に展開）
     async function loadSitesPayload() {
@@ -233,6 +330,8 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', () => {
         const siteId = btn.getAttribute('data-id');
         openModal(siteId);
+        const site = allSites.find(s => String(s.id) === String(siteId));
+        pushDataLayer('click_memo', { campsite_name: campsiteName(site) });
       });
     });
   }
@@ -271,6 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. 予約メモ・アクション生成（実機テスト対応版）
   btnCreateMemo.addEventListener('click', () => {
     if (!selectedSite) return;
+    pushDataLayer('click_memo', { campsite_name: campsiteName(selectedSite) });
 
     const name = document.getElementById('inquiry-name').value.trim() || '未入力';
     const tel = document.getElementById('inquiry-tel').value.trim() || '未入力';
@@ -326,6 +426,9 @@ document.addEventListener('DOMContentLoaded', () => {
         telLink.className = 'btn';
         telLink.style.cssText = 'display: block; background: #166534; color: #ffffff; padding: 12px; font-size: 0.95rem; text-decoration: none; text-align: center; margin-top: 8px; border-radius: 6px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);';
         telLink.textContent = `📞 施設に直接電話をかける (${siteTel})`;
+        telLink.setAttribute('data-gtm-event', 'click_tel');
+        telLink.setAttribute('data-campsite-name', campsiteName(selectedSite));
+        telLink.setAttribute('data-tel-number', siteTel);
         bookingActions.appendChild(telLink);
       } else {
         const noTelNotice = document.createElement('div');
@@ -343,6 +446,10 @@ bookingActions.appendChild(noTelNotice);
         urlLink.className = 'btn';
         urlLink.style.cssText = 'display: block; background: #0284c7; color: #ffffff; padding: 12px; font-size: 0.95rem; text-decoration: none; text-align: center; margin-top: 8px; border-radius: 6px; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.1);';
         urlLink.textContent = '🌐 公式Web予約・申請ページを開く';
+        urlLink.setAttribute('data-gtm-event', 'click_official_site');
+        urlLink.setAttribute('data-campsite-name', campsiteName(selectedSite));
+        urlLink.setAttribute('data-campsite-area', campsiteAreaLabel(selectedSite));
+        urlLink.setAttribute('data-link-url', siteUrl);
         bookingActions.appendChild(urlLink);
       }
 
@@ -393,6 +500,8 @@ bookingActions.appendChild(noTelNotice);
         keepBtn.setAttribute('aria-label', keepBtn.title);
         keepBtn.textContent = kept ? '❤️' : '🤍';
       }
+      const keptSite = allSites.find(s => String(s.id) === String(siteId));
+      pushDataLayer('click_keep', { campsite_name: campsiteName(keptSite) });
     });
 
     btnToggleFavoriteFilter.addEventListener('click', () => {
@@ -445,6 +554,12 @@ bookingActions.appendChild(noTelNotice);
 
     // 6. 検索・フィルターイベント
     cityFilter.addEventListener('change', applyFilters);
+    cityFilter.addEventListener('change', () => {
+      const option = cityFilter.options[cityFilter.selectedIndex];
+      pushDataLayer('filter_area_change', {
+        selected_area: option ? option.text.trim() : ''
+      });
+    });
     searchInput.addEventListener('input', () => {
       if (searchInput.value.length > MAX_KEYWORD_LENGTH) {
         searchInput.value = searchInput.value.slice(0, MAX_KEYWORD_LENGTH);
@@ -464,6 +579,11 @@ bookingActions.appendChild(noTelNotice);
         }
         syncFilterButtons();
         applyFilters();
+        const status = type === 'all' || activeFilters.has(type) ? 'active' : 'inactive';
+        pushDataLayer('filter_criteria_click', {
+          filter_tag_name: (btn.textContent || '').trim(),
+          filter_status: status
+        });
       });
     });
 
@@ -476,6 +596,10 @@ bookingActions.appendChild(noTelNotice);
         applyFilters();
         const search = document.getElementById('search-section');
         if (search) search.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        pushDataLayer('filter_criteria_click', {
+          filter_tag_name: filterTagName(type, card),
+          filter_status: 'active'
+        });
       });
     });
 
